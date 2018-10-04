@@ -1,0 +1,24 @@
+{
+  "wagers": {
+    "bets": 5314,
+    "amount": "1054210000000000000000"
+  },
+  "jackpot": {
+    "address_from": "0xb475ca1647a9efaf84a03a58f7d2bfb7051f6199",
+    "amount": "880000000000000000"
+  },
+  "winners": [
+    {
+      "address_from": "0x086c8fd2dce62370e4960fec8de39cbe85ba979f",
+      "amount": "7411796078431372545"
+    },
+    {
+      "address_from": "0xf9c9ef9a9a494adff0ab70cf29d7a48dec3c6169",
+      "amount": "7064600000000000000"
+    },
+    {
+      "address_from": "0x22bb8622f89769fb2222cda25eb8398374a0642a",
+      "amount": "5483088888888888888"
+    }
+  ]
+}

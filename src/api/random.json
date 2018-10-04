@@ -1,0 +1,11 @@
+{
+  "secret": {
+    "commit": "0x2cbc83fb05af55b4166619661a8c46c2d42712c5140b0f17596ca606fe8f4d47",
+    "commitLastBlock": 6222589,
+    "signature": {
+      "r": "0x2b402a3dce5f58610cc2ff57b2fa21048a3d8c5d86a0a37a9915dfdeb2206426",
+      "s": "0x909f2d7defa517adba191313f81dc136a00373104405eebe4373b634a069305d"
+    }
+  },
+  "gasPrice": "8000000000"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "wallet",
+  "version": "2.5.2",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "7.2.3",
+    "babel-preset-react-native-web3": "^0.0.4",
+    "bip39": "^2.5.0",
+    "eslint": "4.4.1",
+    "eslint-plugin-flowtype": "2.35.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-prettier": "2.1.2",
+    "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-react-native": "3.0.1",
+    "flow-bin": "0.52.0",
+    "flow-typed": "2.1.5",
+    "husky": "0.14.3",
+    "jest": "20.0.4",
+    "jest-expo": "25.0.0",
+    "prettier": "1.5.3",
+    "react-test-renderer": "16.3.1"
+  },
+  "scripts": {
+    "bundle-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js --platform ios --dev false --bundle-output ./ios/bundle/index.jsbundle --assets-dest ./ios/bundle",
+    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'",
+    "bundle-android": "react-native bundle --platform android --dev false --entry-file index.js  --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bn.js": "^4.11.8",
+    "color": "1.0.3",
+    "crypto-js": "^3.1.9-1",
+    "ethers": "^3.0.26",
+    "lodash": "4.13.1",
+    "moment": "2.13.0",
+    "native-base": "2.6.1",
+    "query-string": "^6.1.0",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-fs": "^2.11.15",
+    "react-navigation": "1.5.0",
+    "redux": "^4.0.0",
+    "web3": "^0.20.2"
+  }
+}
