@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1538834497851"
+    timestamp="1538839508831"
     token="5341920070448667392"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -18,14 +18,14 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="136" />
+        duration="0" />
     <task
         name="verifier"
         duration="0" />
 
     <artifact
-        location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
+        location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
     <artifact
         location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
@@ -34,6 +34,9 @@
         type="SPLIT" />
     <artifact
         location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
     <artifact
         location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -59,17 +62,14 @@
     <artifact
         location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
-    <artifact
-        location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1538834497851"
+        timestamp="1538839508831"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
+            location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
@@ -78,6 +78,9 @@
             type="SPLIT" />
         <artifact
             location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -103,9 +106,6 @@
         <artifact
             location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
-        <artifact
-            location="/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

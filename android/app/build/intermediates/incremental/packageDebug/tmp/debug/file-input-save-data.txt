@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Oct 06 21:55:56 CST 2018
+#Sat Oct 06 23:25:11 CST 2018
 5.base=/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 42.base=/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 22.path=lib/x86_64/libimagepipeline.so
