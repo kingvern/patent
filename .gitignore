@@ -38,7 +38,3 @@ Thumbs.db
 
 
 node_modules/
-ios/build/
-android/app/build/
-android/.gradle/
-android/.idea/

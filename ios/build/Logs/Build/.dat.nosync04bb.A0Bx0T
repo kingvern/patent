@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>5EE473C6-95C8-4FA9-A77E-AF725A68933E</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5EE473C6-95C8-4FA9-A77E-AF725A68933E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NativebaseKitchenSink project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NativebaseKitchenSink</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project NativebaseKitchenSink with scheme NativebaseKitchenSink and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>560487974.50198996</real>
+			<key>timeStoppedRecording</key>
+			<real>560487976.32220101</real>
+			<key>title</key>
+			<string>Building project NativebaseKitchenSink with scheme NativebaseKitchenSink and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>5EE473C6-95C8-4FA9-A77E-AF725A68933E</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

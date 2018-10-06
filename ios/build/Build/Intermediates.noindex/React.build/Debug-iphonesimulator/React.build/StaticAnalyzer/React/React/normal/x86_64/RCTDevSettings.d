@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h

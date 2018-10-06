@@ -1,0 +1,8 @@
+
+App Thinning Size Report for All Variants of dice2win
+
+Variant: dice2win-iPhone 6.ipa
+Supported devices: iPhone 6
+App + On Demand Resources size: 3.4 MB compressed, 8 MB uncompressed
+App size: 3.4 MB compressed, 8 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed

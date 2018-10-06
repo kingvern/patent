@@ -1,0 +1,10 @@
+dependencies: \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/Libraries/Network/RCTNetworkTask.m \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTNetworkTask.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestHandler.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h

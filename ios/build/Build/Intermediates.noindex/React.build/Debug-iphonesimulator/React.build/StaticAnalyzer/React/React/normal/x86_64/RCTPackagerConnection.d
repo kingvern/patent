@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/DevSupport/RCTPackagerConnection.mm \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTBundleURLProvider.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/../Libraries/WebSocket/RCTReconnectingWebSocket.h \
+  /Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native/React/../Libraries/WebSocket/RCTSRWebSocket.h
