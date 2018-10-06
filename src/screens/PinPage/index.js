@@ -52,7 +52,7 @@ export default class PinPage extends Component {
       console.log(walletData);
       storageUtil.setData(walletData);
       this.props.navigation.navigate("MyWallet", { walletData: this.state.walletData });
-    }).catch(arg => alert("获取余额失败！原因是" + arg));
+    }).catch(arg => console.log("获取余额失败！原因是" + arg));
 
 
     if (wallet) {

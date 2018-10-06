@@ -579,10 +579,8 @@ export default class MyWallet extends Component {
               }}>
                 <Text>{this.state.gotoTx ? "验证" : "登录"}</Text>
               </Button>
+              {this.renderClose()}
 
-              <Button full dark style={{ marginTop: 20 }} onPress={() => this.setModalVisible(false)}>
-                <Text>关闭</Text>
-              </Button>
             </View>
           </Modal>
         </View>
@@ -590,6 +588,18 @@ export default class MyWallet extends Component {
 
       </Container>
     );
+  }
+
+  renderClose() {
+    if (this.state.gotoTx) {
+      return (
+        <Button full dark style={{ marginTop: 20 }} onPress={() => this.setModalVisible(false)}>
+          <Text>关闭</Text>
+        </Button>
+      );
+    }
+    return;
+
   }
 }
 

@@ -60,8 +60,8 @@ export default class Backup extends Component {
     console.log(this.state);
     var mnemonic = this.state.mnemonic;
     var pin = this.state.pin;
-    var words = mnemonic.split(' ').sort(()=> .5 - Math.random());
-    // var words = mnemonic.split(" ");
+    // var words = mnemonic.split(' ').sort(()=> .5 - Math.random());
+    var words = mnemonic.split(" ");
     var wordState = new Array();
     words.map((item, i) => wordState[item] = true);
     this.setState({ stateWord: words, wordState: wordState }, () => {
@@ -81,7 +81,7 @@ export default class Backup extends Component {
       this.setState({ walletData });
       storageUtil.setData(walletData);
 
-    }).catch(arg => alert("获取余额失败！原因是" + arg));
+    }).catch(arg => console.log("获取余额失败！原因是" + arg));
   }
 
 
