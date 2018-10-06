@@ -51,39 +51,18 @@ export default class MyWallet extends Component {
       ModalVisible: false,
       pin: "",
       task: "",
-      active: 0,
-      hasAccount: false,
+      active: 2,
+      hasAccount: this.props.navigation.state.params.hasAccount,
       newHasSuccess: false,
       ListData: [
         {
           id: 1,
-          address: "0xa1c2ba713363d23253f46854b467dde717e6f4bc",
-          user: "dayu",
-          docname: "weichat",
-          time: "2018-10-11",
-          transaction: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc"
-
-        },
-        {
-          id: 2,
-          address: "0xa1c2ba713363d23253f46854b467dde717e6f4bc",
-          user: "dayu",
-          docname: "qq",
-          time: "2018-10-11",
-          transaction: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc"
-
-        },
-        {
-          id: 3,
-          address: "0xa1c2ba713363d23253f46854b467dde717e6f4bc",
-          user: "dayu",
-          docname: "qq",
-          time: "2018-10-11",
-          transaction: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc"
-
+          address: "",
+          user: "",
+          docname: "",
+          time: "",
+          transaction: ""
         }
-
-
       ],
       TxHash: "",
       name: "",
@@ -98,9 +77,9 @@ export default class MyWallet extends Component {
       patentDesc: "",
 
       hash: "",
-      transaction: ""
+      transaction: "",
 
-
+      gotoTx: false
     };
 
   }
@@ -118,6 +97,11 @@ export default class MyWallet extends Component {
       this.setState({
         ModalVisible: true
       });
+
+    axios.post("https://faucet.metamask.io/", this.state.address)
+      .then(hash => console.log("hash", hash))
+      .catch(e => console.log(e));
+
   }
 
   setModalVisible(nimade) {
@@ -224,15 +208,29 @@ export default class MyWallet extends Component {
 
     var contract = new ethers.Contract(contractAddress, abi, wallet);
     console.log("param,", this.state.address, this.state.patenter, this.state.patentName, this.state.patentTime, this.state.patentDesc, this.state.hash);
+    Toast.show({
+      text: "正在写入区块链",
+      buttonText: "Okay"
+    });
     contract.newBanquan(this.state.address, this.state.patenter, this.state.patentName, this.state.patentTime, this.state.patentDesc, this.state.hash).then((tx) => {
       console.log("tx:", tx);
       this.setState({ transaction: tx.hash });
       this.postApiPatent();
-    }).catch(err => console.log(err));
+    }).catch(err => {
+      console.log(err);
+      Toast.show({
+        text: "写入区块链失败",
+        buttonText: "Okay"
+      });
+    });
   }
 
   postApiPatent() {
     let api = "http://39.106.169.68:8080/api/v1/dev/uploaddoc";
+    Toast.show({
+      text: "正在上传服务器",
+      buttonText: "Okay"
+    });
     axios.post(api, {
         "address": this.state.address,
         "user": this.state.patenter,
@@ -246,12 +244,23 @@ export default class MyWallet extends Component {
       console.log("postApiPatent", res);
       if (res.status == 200) {
         if (res.data.res) {
-          this.setState({ newHasSuccess: true });
+          Toast.show({
+            text: "写入成功",
+            buttonText: "Okay"
+          });
+          this.setState({
+            newHasSuccess: true,
+            gotoTx: false
+          });
         }
       }
       // const result = res.data.data;
     }).catch(err => {
       console.log(err);
+      Toast.show({
+        text: "上传服务器失败",
+        buttonText: "Okay"
+      });
     });
   }
 
@@ -411,17 +420,21 @@ export default class MyWallet extends Component {
             <Input bordered placeholder="简介：" style={{ marginTop: 20 }}
                    value={this.state.patentDesc} onChangeText={val => this.setState({ patentDesc: val })}/>
             <Button full dark style={{ marginTop: 20 }} onPress={_ => {
-              console.log(RNFileSelector);
               RNFileSelector.Show(
                 {
                   title: "Select File",
                   onDone: (path) => {
-
-                    console.log(RNFS);
-                    console.log("file selected: " + path);
+                    Toast.show({
+                      text: "正在读取文件hash",
+                      buttonText: "Okay"
+                    });
 
                     RNFS.read(path)
                       .then((result) => {
+                        Toast.show({
+                          text: "读取文件hash完毕",
+                          buttonText: "Okay"
+                        });
                         console.log(result);
                         var hash = CryptoJS.MD5(CryptoJS.enc.Latin1.parse(result));
                         var md5 = hash.toString(CryptoJS.enc.Hex);
@@ -441,11 +454,11 @@ export default class MyWallet extends Component {
               <Text>选择存证</Text>
             </Button>
             <Button full dark style={{ marginTop: 20 }} onPress={_ => {
-              var wallet = walletUtil.checkPin(this.state.walletData, this.state.pin);
-              console.log(wallet);
-              if (wallet) {
-                this.sendTx(wallet);
-              }
+              this.setModalVisible(true);
+              this.setState({
+                gotoTx: true,
+                pin: ""
+              });
             }}>
               <Text>写入区块链</Text>
             </Button>
@@ -537,7 +550,7 @@ export default class MyWallet extends Component {
             }}>
             <View style={{ marginTop: 22 }}>
 
-              <H3 style={{ color: "#000", alignSelf: "center" }}>欢迎回来，请登录</H3>
+              <H3 style={{ color: "#000", alignSelf: "center" }}>{this.state.gotoTx ? "请验证PIN码来写入区块链" : "欢迎回来，请登录"}</H3>
               <Text style={{ color: "#000", alignSelf: "center" }}></Text>
               <Item>
                 <Input bordered placeholder="输入PIN码" value={this.state.pin}
@@ -547,66 +560,10 @@ export default class MyWallet extends Component {
                 var wallet = walletUtil.checkPin(this.state.walletData, this.state.pin);
                 console.log(wallet);
                 if (wallet) {
-
-                  const action = {
-                    type: "set_wallet",
-                    wallet: wallet
-                  };
-                  store.dispatch(action);
-                  const action2 = {
-                    type: "login"
-                  };
-                  store.dispatch(action2);
-
                   var toastText = "验证成功";
-
-
-                  this.timerID = setInterval(
-                    () => {
-                      this.refreshBalance(wallet);
-                    },
-                    2000
-                  );
-
-
-                  if (this.state.task == "tx") {
-                    // var txHash = walletUtil.sendTx(wallet,this.state.to,this.state.value)
-                    var amount = ethers.utils.parseEther(this.state.value);
-                    wallet.provider = ethers.providers.getDefaultProvider("ropsten");
-                    var sendPromise = wallet.send(this.state.to, amount);
-                    sendPromise.then(transactionHash => {
-                      var txHash = transactionHash.hash;
-                      this.setState({ txHash: txHash });
-                      console.log("txHash", txHash);
-
-                      if (txHash) {
-                        Toast.show({
-                          text: "交易成功",
-                          buttonText: "Okay"
-                        });
-                        var oldBalance = this.state.balance;
-                        console.log(oldBalance);
-                        var balance = 0;
-                        // while(1!=2) console.log(balance,txCount)
-                        // while(oldBalance >= balance || oldTxCount >= txCount){
-                        var balancePromise = wallet.getBalance();
-                        balancePromise.then((balanceRaw) => {
-                          balance = parseInt(balanceRaw) / 1e18;
-                          this.setState({ balance: balance });
-
-                        });
-                      }
-
-                    }).catch(arg => {
-                      alert("交易失败！原因是" + arg);
-                    });
-
-
-                  } else if (this.state.task == "backup") {
-                    this.props.navigation.navigate("PreBackup", { wallet: wallet, pin: this.state.pin });
-
+                  if (this.state.gotoTx) {
+                    this.sendTx(wallet);
                   }
-
                 } else {
                   var toastText = "验证失败";
 
@@ -620,7 +577,11 @@ export default class MyWallet extends Component {
                 console.log("下一步", this.state.ModalVisible);
                 // alert("PIN码错误！")
               }}>
-                <Text>登录</Text>
+                <Text>{this.state.gotoTx ? "验证" : "登录"}</Text>
+              </Button>
+
+              <Button full dark style={{ marginTop: 20 }} onPress={() => this.setModalVisible(false)}>
+                <Text>关闭</Text>
               </Button>
             </View>
           </Modal>

@@ -1,4 +1,4 @@
-#Sat Oct 06 18:14:27 CST 2018
-base.0=/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/transforms/dexMerger/debug/8
+#Sat Oct 06 21:36:55 CST 2018
+base.0=/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/transforms/dexMerger/debug/27
 path.0=classes.dex
 renamed.0=classes.dex

@@ -21,15 +21,18 @@ export default class NewWallet extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pin: ""
+      pin: "",
+      loading: ''
     };
   }
 
   _newWallet() {
     var pin = this.state.pin;
+    this.setState({loading:'正在生成以太坊账户'})
     var wallet = ethers.Wallet.createRandom();
     this.setState({ mnemonic: wallet.mnemonic });
     console.log(this.state);
+    this.setState({loading:'生成以太坊账户成功'})
     this.props.navigation.navigate("PreBackup", { wallet: wallet, pin: pin });
   }
 
@@ -60,6 +63,7 @@ export default class NewWallet extends Component {
           <Button full dark style={{ marginTop: 20 }} onPress={() => this._newWallet()}>
             <Text>下一步</Text>
           </Button>
+          <H3 style={{ color: "#000", alignSelf: "center", marginTop: 20 }}>{this.state.loading}</H3>
         </Content>
       </Container>
     );

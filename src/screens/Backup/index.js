@@ -60,8 +60,8 @@ export default class Backup extends Component {
     console.log(this.state);
     var mnemonic = this.state.mnemonic;
     var pin = this.state.pin;
-    // var words = mnemonic.split(' ').sort(()=> .5 - Math.random());
-    var words = mnemonic.split(" ");
+    var words = mnemonic.split(' ').sort(()=> .5 - Math.random());
+    // var words = mnemonic.split(" ");
     var wordState = new Array();
     words.map((item, i) => wordState[item] = true);
     this.setState({ stateWord: words, wordState: wordState }, () => {
@@ -125,7 +125,7 @@ export default class Backup extends Component {
       };
       store.dispatch(action2);
       console.log("this.state backup",store.getState())
-      this.props.navigation.navigate("MyWallet", { walletData: this.state.walletData });
+      this.props.navigation.navigate("MyWallet", { walletData: this.state.walletData, active: 2, hasAccount: false});
     }
     else {
       alert("输入错误哦！");

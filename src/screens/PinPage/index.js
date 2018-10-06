@@ -30,7 +30,9 @@ export default class PinPage extends Component {
     super(props);
     this.state = {
       wallet: this.props.navigation.state.params.wallet,
-      pin: ""
+      pin: "",
+      loading: ''
+
     };
   }
 
@@ -65,12 +67,12 @@ export default class PinPage extends Component {
       };
       store.dispatch(action2);
 
-      this.timerID = setInterval(
-        () => {
-          this.refreshBalance(wallet);
-        },
-        2000
-      );
+      // this.timerID = setInterval(
+      //   () => {
+      //     this.refreshBalance(wallet);
+      //   },
+      //   2000
+      // );
     }
   }
   refreshBalance(wallet){
@@ -86,7 +88,7 @@ export default class PinPage extends Component {
         ...walletData,
         balance: this.state.balance
       };
-      this.setState({ walletData: walletData });
+      this.setState({ walletData: walletData, hasAccount: true });
       var action = {
         type:"set_walletData",
         walletData:walletData
@@ -122,6 +124,8 @@ export default class PinPage extends Component {
           <Button full dark style={{ marginTop: 20 }} onPress={() => this._sendData()}>
             <Text>下一步</Text>
           </Button>
+
+          <H3 style={{ color: "#000", alignSelf: "center", marginTop: 20 }}>{this.state.loading}</H3>
         </Content>
       </Container>
     );
