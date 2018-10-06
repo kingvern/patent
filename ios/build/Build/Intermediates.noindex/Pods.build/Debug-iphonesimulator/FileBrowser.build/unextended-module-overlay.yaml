@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/FileBrowser/FileBrowser.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FileBrowser.build/unextended-module.modulemap',
+    }]
+  }]
+}

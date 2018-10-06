@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-file-selector')
     compile project(':react-native-fs')
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])
@@ -149,4 +150,16 @@ dependencies {
 task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                //这里写你想统一的版本是多少，前提是你sdk里有
+                details.useVersion '25.0.0'
+            }
+        }
+    }
 }

@@ -1,0 +1,537 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "11FileBrowser0A18ListViewControllerC"
+provides-member:
+- ["11FileBrowser0A18ListViewControllerC", ""]
+provides-dynamic-lookup:
+- "previewingContext"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CGPoint"
+- "CastingPrecedence"
+- "FileListViewController"
+- !private "PreviewTransitionViewController"
+- !private "UIForceTouchCapability"
+- "UIViewController"
+- "UIViewControllerPreviewing"
+- "UIViewControllerPreviewingDelegate"
+depends-member:
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "indexPathForRow"]
+- !private ["So15CALayerDelegateP", "rectForRow"]
+- !private ["s7CVarArgP", "UIForceTouchCapability"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "fileForIndexPath"]
+- !private ["s7CVarArgP", "forceTouchCapability"]
+- !private ["s7CVarArgP", "indexPathForRow"]
+- !private ["s7CVarArgP", "isDirectory"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "previewManager"]
+- !private ["s7CVarArgP", "previewViewControllerForFile"]
+- ["s7CVarArgP", "previewingContext"]
+- !private ["s7CVarArgP", "pushViewController"]
+- !private ["s7CVarArgP", "quickLookPreviewController"]
+- !private ["s7CVarArgP", "rectForRow"]
+- !private ["s7CVarArgP", "registerForPreviewing"]
+- !private ["s7CVarArgP", "tableView"]
+- !private ["s7CVarArgP", "traitCollection"]
+- !private ["s28CustomDebugStringConvertibleP", "UIForceTouchCapability"]
+- !private ["s28CustomDebugStringConvertibleP", "fileForIndexPath"]
+- !private ["s28CustomDebugStringConvertibleP", "forceTouchCapability"]
+- !private ["s28CustomDebugStringConvertibleP", "indexPathForRow"]
+- !private ["s28CustomDebugStringConvertibleP", "isDirectory"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "previewManager"]
+- !private ["s28CustomDebugStringConvertibleP", "previewViewControllerForFile"]
+- ["s28CustomDebugStringConvertibleP", "previewingContext"]
+- !private ["s28CustomDebugStringConvertibleP", "pushViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "quickLookPreviewController"]
+- !private ["s28CustomDebugStringConvertibleP", "rectForRow"]
+- !private ["s28CustomDebugStringConvertibleP", "registerForPreviewing"]
+- !private ["s28CustomDebugStringConvertibleP", "tableView"]
+- !private ["s28CustomDebugStringConvertibleP", "traitCollection"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "indexPathForRow"]
+- !private ["s17CustomReflectableP", "rectForRow"]
+- !private ["s23CustomStringConvertibleP", "UIForceTouchCapability"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "fileForIndexPath"]
+- !private ["s23CustomStringConvertibleP", "forceTouchCapability"]
+- !private ["s23CustomStringConvertibleP", "indexPathForRow"]
+- !private ["s23CustomStringConvertibleP", "isDirectory"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "previewManager"]
+- !private ["s23CustomStringConvertibleP", "previewViewControllerForFile"]
+- ["s23CustomStringConvertibleP", "previewingContext"]
+- !private ["s23CustomStringConvertibleP", "pushViewController"]
+- !private ["s23CustomStringConvertibleP", "quickLookPreviewController"]
+- !private ["s23CustomStringConvertibleP", "rectForRow"]
+- !private ["s23CustomStringConvertibleP", "registerForPreviewing"]
+- !private ["s23CustomStringConvertibleP", "tableView"]
+- !private ["s23CustomStringConvertibleP", "traitCollection"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "indexPathForRow"]
+- !private ["Se", "rectForRow"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "indexPathForRow"]
+- !private ["SE", "rectForRow"]
+- !private ["SQ", "UIForceTouchCapability"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "available"]
+- !private ["SQ", "fileForIndexPath"]
+- !private ["SQ", "forceTouchCapability"]
+- !private ["SQ", "indexPathForRow"]
+- !private ["SQ", "isDirectory"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "previewManager"]
+- !private ["SQ", "previewViewControllerForFile"]
+- ["SQ", "previewingContext"]
+- !private ["SQ", "pushViewController"]
+- !private ["SQ", "quickLookPreviewController"]
+- !private ["SQ", "rectForRow"]
+- !private ["SQ", "registerForPreviewing"]
+- !private ["SQ", "tableView"]
+- !private ["SQ", "traitCollection"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s23ExpressibleByNilLiteralP", "indexPathForRow"]
+- !private ["s23ExpressibleByNilLiteralP", "rectForRow"]
+- !private ["11FileBrowser6FBFileC", "isDirectory"]
+- ["11FileBrowser0A18ListViewControllerC", "CGPoint"]
+- !private ["11FileBrowser0A18ListViewControllerC", "PreviewTransitionViewController"]
+- !private ["11FileBrowser0A18ListViewControllerC", "UIForceTouchCapability"]
+- ["11FileBrowser0A18ListViewControllerC", "UIViewController"]
+- ["11FileBrowser0A18ListViewControllerC", "UIViewControllerPreviewing"]
+- ["11FileBrowser0A18ListViewControllerC", "deinit"]
+- !private ["11FileBrowser0A18ListViewControllerC", "fileForIndexPath"]
+- !private ["11FileBrowser0A18ListViewControllerC", "navigationController"]
+- !private ["11FileBrowser0A18ListViewControllerC", "previewManager"]
+- ["11FileBrowser0A18ListViewControllerC", "previewingContext"]
+- ["11FileBrowser0A18ListViewControllerC", "registerFor3DTouch"]
+- !private ["11FileBrowser0A18ListViewControllerC", "registerForPreviewing"]
+- !private ["11FileBrowser0A18ListViewControllerC", "tableView"]
+- !private ["11FileBrowser0A18ListViewControllerC", "traitCollection"]
+- !private ["SH", "UIForceTouchCapability"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "available"]
+- !private ["SH", "fileForIndexPath"]
+- !private ["SH", "forceTouchCapability"]
+- !private ["SH", "indexPathForRow"]
+- !private ["SH", "isDirectory"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "previewManager"]
+- !private ["SH", "previewViewControllerForFile"]
+- ["SH", "previewingContext"]
+- !private ["SH", "pushViewController"]
+- !private ["SH", "quickLookPreviewController"]
+- !private ["SH", "rectForRow"]
+- !private ["SH", "registerForPreviewing"]
+- !private ["SH", "tableView"]
+- !private ["SH", "traitCollection"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["So8NSCodingP", "UIForceTouchCapability"]
+- !private ["So8NSCodingP", "fileForIndexPath"]
+- !private ["So8NSCodingP", "forceTouchCapability"]
+- !private ["So8NSCodingP", "indexPathForRow"]
+- !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "previewManager"]
+- ["So8NSCodingP", "previewingContext"]
+- !private ["So8NSCodingP", "pushViewController"]
+- !private ["So8NSCodingP", "quickLookPreviewController"]
+- !private ["So8NSCodingP", "rectForRow"]
+- !private ["So8NSCodingP", "registerForPreviewing"]
+- !private ["So8NSCodingP", "tableView"]
+- !private ["So8NSCodingP", "traitCollection"]
+- !private ["So9NSCopyingP", "forceTouchCapability"]
+- !private ["So26NSExtensionRequestHandlingP", "UIForceTouchCapability"]
+- !private ["So26NSExtensionRequestHandlingP", "fileForIndexPath"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "previewManager"]
+- ["So26NSExtensionRequestHandlingP", "previewingContext"]
+- !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "quickLookPreviewController"]
+- !private ["So26NSExtensionRequestHandlingP", "registerForPreviewing"]
+- !private ["So26NSExtensionRequestHandlingP", "tableView"]
+- !private ["So26NSExtensionRequestHandlingP", "traitCollection"]
+- ["So8NSObjectC", "CGPoint"]
+- !private ["So8NSObjectC", "PreviewTransitionViewController"]
+- !private ["So8NSObjectC", "UIForceTouchCapability"]
+- ["So8NSObjectC", "UIViewController"]
+- ["So8NSObjectC", "UIViewControllerPreviewing"]
+- !private ["So8NSObjectC", "fileForIndexPath"]
+- !private ["So8NSObjectC", "forceTouchCapability"]
+- !private ["So8NSObjectC", "indexPathForRow"]
+- !private ["So8NSObjectC", "isDirectory"]
+- !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "previewManager"]
+- !private ["So8NSObjectC", "previewViewControllerForFile"]
+- ["So8NSObjectC", "previewingContext"]
+- !private ["So8NSObjectC", "pushViewController"]
+- !private ["So8NSObjectC", "quickLookPreviewController"]
+- !private ["So8NSObjectC", "rectForRow"]
+- ["So8NSObjectC", "registerFor3DTouch"]
+- !private ["So8NSObjectC", "registerForPreviewing"]
+- !private ["So8NSObjectC", "tableView"]
+- !private ["So8NSObjectC", "traitCollection"]
+- !private ["So8NSObjectP", "UIForceTouchCapability"]
+- !private ["So8NSObjectP", "fileForIndexPath"]
+- !private ["So8NSObjectP", "forceTouchCapability"]
+- !private ["So8NSObjectP", "indexPathForRow"]
+- !private ["So8NSObjectP", "isDirectory"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "previewManager"]
+- !private ["So8NSObjectP", "previewViewControllerForFile"]
+- ["So8NSObjectP", "previewingContext"]
+- !private ["So8NSObjectP", "pushViewController"]
+- !private ["So8NSObjectP", "quickLookPreviewController"]
+- !private ["So8NSObjectP", "rectForRow"]
+- !private ["So8NSObjectP", "registerForPreviewing"]
+- !private ["So8NSObjectP", "sourceRect"]
+- !private ["So8NSObjectP", "tableView"]
+- !private ["So8NSObjectP", "traitCollection"]
+- !private ["So14NSSecureCodingP", "forceTouchCapability"]
+- !private ["Sq", "indexPathForRow"]
+- !private ["Sq", "rectForRow"]
+- !private ["11FileBrowser14PreviewManagerC", "previewViewControllerForFile"]
+- !private ["11FileBrowser31PreviewTransitionViewControllerC", "quickLookPreviewController"]
+- !private ["So29QLPreviewControllerDataSourceP", "previewViewControllerForFile"]
+- !private ["SY", "available"]
+- !private ["So29UIAccessibilityIdentificationP", "indexPathForRow"]
+- !private ["So29UIAccessibilityIdentificationP", "rectForRow"]
+- !private ["So12UIAppearanceP", "indexPathForRow"]
+- !private ["So12UIAppearanceP", "rectForRow"]
+- !private ["So21UIAppearanceContainerP", "UIForceTouchCapability"]
+- !private ["So21UIAppearanceContainerP", "fileForIndexPath"]
+- !private ["So21UIAppearanceContainerP", "indexPathForRow"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "previewManager"]
+- ["So21UIAppearanceContainerP", "previewingContext"]
+- !private ["So21UIAppearanceContainerP", "pushViewController"]
+- !private ["So21UIAppearanceContainerP", "quickLookPreviewController"]
+- !private ["So21UIAppearanceContainerP", "rectForRow"]
+- !private ["So21UIAppearanceContainerP", "registerForPreviewing"]
+- !private ["So21UIAppearanceContainerP", "tableView"]
+- !private ["So21UIAppearanceContainerP", "traitCollection"]
+- !private ["So24UIBarPositioningDelegateP", "UIForceTouchCapability"]
+- !private ["So24UIBarPositioningDelegateP", "fileForIndexPath"]
+- !private ["So24UIBarPositioningDelegateP", "navigationController"]
+- !private ["So24UIBarPositioningDelegateP", "previewManager"]
+- ["So24UIBarPositioningDelegateP", "previewingContext"]
+- !private ["So24UIBarPositioningDelegateP", "registerForPreviewing"]
+- !private ["So24UIBarPositioningDelegateP", "tableView"]
+- !private ["So24UIBarPositioningDelegateP", "traitCollection"]
+- !private ["So18UIContentContainerP", "UIForceTouchCapability"]
+- !private ["So18UIContentContainerP", "fileForIndexPath"]
+- !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "previewManager"]
+- ["So18UIContentContainerP", "previewingContext"]
+- !private ["So18UIContentContainerP", "pushViewController"]
+- !private ["So18UIContentContainerP", "quickLookPreviewController"]
+- !private ["So18UIContentContainerP", "registerForPreviewing"]
+- !private ["So18UIContentContainerP", "tableView"]
+- !private ["So18UIContentContainerP", "traitCollection"]
+- !private ["So17UICoordinateSpaceP", "indexPathForRow"]
+- !private ["So17UICoordinateSpaceP", "rectForRow"]
+- !private ["So23UIDataSourceTranslatingP", "indexPathForRow"]
+- !private ["So23UIDataSourceTranslatingP", "rectForRow"]
+- !private ["So13UIDynamicItemP", "indexPathForRow"]
+- !private ["So13UIDynamicItemP", "rectForRow"]
+- !private ["So18UIFocusEnvironmentP", "UIForceTouchCapability"]
+- !private ["So18UIFocusEnvironmentP", "fileForIndexPath"]
+- !private ["So18UIFocusEnvironmentP", "indexPathForRow"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "previewManager"]
+- ["So18UIFocusEnvironmentP", "previewingContext"]
+- !private ["So18UIFocusEnvironmentP", "pushViewController"]
+- !private ["So18UIFocusEnvironmentP", "quickLookPreviewController"]
+- !private ["So18UIFocusEnvironmentP", "rectForRow"]
+- !private ["So18UIFocusEnvironmentP", "registerForPreviewing"]
+- !private ["So18UIFocusEnvironmentP", "tableView"]
+- !private ["So18UIFocusEnvironmentP", "traitCollection"]
+- !private ["So11UIFocusItemP", "indexPathForRow"]
+- !private ["So11UIFocusItemP", "rectForRow"]
+- !private ["So20UIFocusItemContainerP", "indexPathForRow"]
+- !private ["So20UIFocusItemContainerP", "rectForRow"]
+- !private ["So30UIFocusItemScrollableContainerP", "indexPathForRow"]
+- !private ["So30UIFocusItemScrollableContainerP", "rectForRow"]
+- !private ["So22UIForceTouchCapabilityV", "available"]
+- !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIForceTouchCapability"]
+- !private ["So30UIPasteConfigurationSupportingP", "fileForIndexPath"]
+- !private ["So30UIPasteConfigurationSupportingP", "indexPathForRow"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "previewManager"]
+- ["So30UIPasteConfigurationSupportingP", "previewingContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "pushViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "quickLookPreviewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "rectForRow"]
+- !private ["So30UIPasteConfigurationSupportingP", "registerForPreviewing"]
+- !private ["So30UIPasteConfigurationSupportingP", "tableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "traitCollection"]
+- ["So11UIResponderC", "CGPoint"]
+- !private ["So11UIResponderC", "PreviewTransitionViewController"]
+- !private ["So11UIResponderC", "UIForceTouchCapability"]
+- ["So11UIResponderC", "UIViewController"]
+- ["So11UIResponderC", "UIViewControllerPreviewing"]
+- !private ["So11UIResponderC", "fileForIndexPath"]
+- !private ["So11UIResponderC", "indexPathForRow"]
+- !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "previewManager"]
+- ["So11UIResponderC", "previewingContext"]
+- !private ["So11UIResponderC", "pushViewController"]
+- !private ["So11UIResponderC", "quickLookPreviewController"]
+- !private ["So11UIResponderC", "rectForRow"]
+- ["So11UIResponderC", "registerFor3DTouch"]
+- !private ["So11UIResponderC", "registerForPreviewing"]
+- !private ["So11UIResponderC", "tableView"]
+- !private ["So11UIResponderC", "traitCollection"]
+- !private ["So30UIResponderStandardEditActionsP", "UIForceTouchCapability"]
+- !private ["So30UIResponderStandardEditActionsP", "fileForIndexPath"]
+- !private ["So30UIResponderStandardEditActionsP", "indexPathForRow"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "previewManager"]
+- ["So30UIResponderStandardEditActionsP", "previewingContext"]
+- !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "quickLookPreviewController"]
+- !private ["So30UIResponderStandardEditActionsP", "rectForRow"]
+- !private ["So30UIResponderStandardEditActionsP", "registerForPreviewing"]
+- !private ["So30UIResponderStandardEditActionsP", "tableView"]
+- !private ["So30UIResponderStandardEditActionsP", "traitCollection"]
+- !private ["So12UIScrollViewC", "indexPathForRow"]
+- !private ["So12UIScrollViewC", "rectForRow"]
+- !private ["So20UIScrollViewDelegateP", "UIForceTouchCapability"]
+- !private ["So20UIScrollViewDelegateP", "fileForIndexPath"]
+- !private ["So20UIScrollViewDelegateP", "navigationController"]
+- !private ["So20UIScrollViewDelegateP", "previewManager"]
+- ["So20UIScrollViewDelegateP", "previewingContext"]
+- !private ["So20UIScrollViewDelegateP", "registerForPreviewing"]
+- !private ["So20UIScrollViewDelegateP", "tableView"]
+- !private ["So20UIScrollViewDelegateP", "traitCollection"]
+- !private ["So19UISearchBarDelegateP", "UIForceTouchCapability"]
+- !private ["So19UISearchBarDelegateP", "fileForIndexPath"]
+- !private ["So19UISearchBarDelegateP", "navigationController"]
+- !private ["So19UISearchBarDelegateP", "previewManager"]
+- ["So19UISearchBarDelegateP", "previewingContext"]
+- !private ["So19UISearchBarDelegateP", "registerForPreviewing"]
+- !private ["So19UISearchBarDelegateP", "tableView"]
+- !private ["So19UISearchBarDelegateP", "traitCollection"]
+- !private ["So26UISearchControllerDelegateP", "UIForceTouchCapability"]
+- !private ["So26UISearchControllerDelegateP", "fileForIndexPath"]
+- !private ["So26UISearchControllerDelegateP", "navigationController"]
+- !private ["So26UISearchControllerDelegateP", "previewManager"]
+- ["So26UISearchControllerDelegateP", "previewingContext"]
+- !private ["So26UISearchControllerDelegateP", "registerForPreviewing"]
+- !private ["So26UISearchControllerDelegateP", "tableView"]
+- !private ["So26UISearchControllerDelegateP", "traitCollection"]
+- !private ["So23UISearchResultsUpdatingP", "UIForceTouchCapability"]
+- !private ["So23UISearchResultsUpdatingP", "fileForIndexPath"]
+- !private ["So23UISearchResultsUpdatingP", "navigationController"]
+- !private ["So23UISearchResultsUpdatingP", "previewManager"]
+- ["So23UISearchResultsUpdatingP", "previewingContext"]
+- !private ["So23UISearchResultsUpdatingP", "registerForPreviewing"]
+- !private ["So23UISearchResultsUpdatingP", "tableView"]
+- !private ["So23UISearchResultsUpdatingP", "traitCollection"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "indexPathForRow"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "rectForRow"]
+- !private ["So16UIStateRestoringP", "UIForceTouchCapability"]
+- !private ["So16UIStateRestoringP", "fileForIndexPath"]
+- !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "previewManager"]
+- ["So16UIStateRestoringP", "previewingContext"]
+- !private ["So16UIStateRestoringP", "pushViewController"]
+- !private ["So16UIStateRestoringP", "quickLookPreviewController"]
+- !private ["So16UIStateRestoringP", "registerForPreviewing"]
+- !private ["So16UIStateRestoringP", "tableView"]
+- !private ["So16UIStateRestoringP", "traitCollection"]
+- !private ["So11UITableViewC", "indexPathForRow"]
+- !private ["So11UITableViewC", "rectForRow"]
+- !private ["So21UITableViewDataSourceP", "UIForceTouchCapability"]
+- !private ["So21UITableViewDataSourceP", "fileForIndexPath"]
+- !private ["So21UITableViewDataSourceP", "navigationController"]
+- !private ["So21UITableViewDataSourceP", "previewManager"]
+- ["So21UITableViewDataSourceP", "previewingContext"]
+- !private ["So21UITableViewDataSourceP", "registerForPreviewing"]
+- !private ["So21UITableViewDataSourceP", "tableView"]
+- !private ["So21UITableViewDataSourceP", "traitCollection"]
+- !private ["So19UITableViewDelegateP", "UIForceTouchCapability"]
+- !private ["So19UITableViewDelegateP", "fileForIndexPath"]
+- !private ["So19UITableViewDelegateP", "navigationController"]
+- !private ["So19UITableViewDelegateP", "previewManager"]
+- ["So19UITableViewDelegateP", "previewingContext"]
+- !private ["So19UITableViewDelegateP", "registerForPreviewing"]
+- !private ["So19UITableViewDelegateP", "tableView"]
+- !private ["So19UITableViewDelegateP", "traitCollection"]
+- !private ["So17UITraitCollectionC", "forceTouchCapability"]
+- !private ["So18UITraitEnvironmentP", "UIForceTouchCapability"]
+- !private ["So18UITraitEnvironmentP", "fileForIndexPath"]
+- !private ["So18UITraitEnvironmentP", "indexPathForRow"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "previewManager"]
+- ["So18UITraitEnvironmentP", "previewingContext"]
+- !private ["So18UITraitEnvironmentP", "pushViewController"]
+- !private ["So18UITraitEnvironmentP", "quickLookPreviewController"]
+- !private ["So18UITraitEnvironmentP", "rectForRow"]
+- !private ["So18UITraitEnvironmentP", "registerForPreviewing"]
+- !private ["So18UITraitEnvironmentP", "tableView"]
+- !private ["So18UITraitEnvironmentP", "traitCollection"]
+- !private ["So23UIUserActivityRestoringP", "UIForceTouchCapability"]
+- !private ["So23UIUserActivityRestoringP", "fileForIndexPath"]
+- !private ["So23UIUserActivityRestoringP", "indexPathForRow"]
+- !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "previewManager"]
+- ["So23UIUserActivityRestoringP", "previewingContext"]
+- !private ["So23UIUserActivityRestoringP", "pushViewController"]
+- !private ["So23UIUserActivityRestoringP", "quickLookPreviewController"]
+- !private ["So23UIUserActivityRestoringP", "rectForRow"]
+- !private ["So23UIUserActivityRestoringP", "registerForPreviewing"]
+- !private ["So23UIUserActivityRestoringP", "tableView"]
+- !private ["So23UIUserActivityRestoringP", "traitCollection"]
+- !private ["So6UIViewC", "indexPathForRow"]
+- !private ["So6UIViewC", "rectForRow"]
+- ["So16UIViewControllerC", "CGPoint"]
+- !private ["So16UIViewControllerC", "PreviewTransitionViewController"]
+- !private ["So16UIViewControllerC", "UIForceTouchCapability"]
+- ["So16UIViewControllerC", "UIViewController"]
+- ["So16UIViewControllerC", "UIViewControllerPreviewing"]
+- !private ["So16UIViewControllerC", "fileForIndexPath"]
+- !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "previewManager"]
+- ["So16UIViewControllerC", "previewingContext"]
+- !private ["So16UIViewControllerC", "pushViewController"]
+- !private ["So16UIViewControllerC", "quickLookPreviewController"]
+- ["So16UIViewControllerC", "registerFor3DTouch"]
+- !private ["So16UIViewControllerC", "registerForPreviewing"]
+- !private ["So16UIViewControllerC", "tableView"]
+- !private ["So16UIViewControllerC", "traitCollection"]
+- !private ["So26UIViewControllerPreviewingP", "sourceRect"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "UIForceTouchCapability"]
+- ["So34UIViewControllerPreviewingDelegateP", ""]
+- !private ["So34UIViewControllerPreviewingDelegateP", "fileForIndexPath"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "navigationController"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "previewManager"]
+- ["So34UIViewControllerPreviewingDelegateP", "previewingContext"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "registerForPreviewing"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "tableView"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "traitCollection"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "indexPathForRow"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rectForRow"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIForceTouchCapability"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fileForIndexPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "forceTouchCapability"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForRow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isDirectory"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "previewManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "previewViewControllerForFile"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "previewingContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pushViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "quickLookPreviewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rectForRow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "registerForPreviewing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "traitCollection"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "indexPathForRow"]
+- !private ["s21_ObjectiveCBridgeableP", "rectForRow"]
+depends-nominal:
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "11FileBrowser6FBFileC"
+- "11FileBrowser0A18ListViewControllerC"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "11FileBrowser14PreviewManagerC"
+- !private "11FileBrowser31PreviewTransitionViewControllerC"
+- !private "So29QLPreviewControllerDataSourceP"
+- !private "SY"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So24UIBarPositioningDelegateP"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- !private "So22UIForceTouchCapabilityV"
+- !private "So22UINavigationControllerC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
+- "So19UISearchBarDelegateP"
+- "So26UISearchControllerDelegateP"
+- "So23UISearchResultsUpdatingP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So11UITableViewC"
+- "So21UITableViewDataSourceP"
+- "So19UITableViewDelegateP"
+- !private "So17UITraitCollectionC"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So26UIViewControllerPreviewingP"
+- "So34UIViewControllerPreviewingDelegateP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/Target Support Files/FileBrowser/FileBrowser-umbrella.h"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/FileBrowser/FileBrowser/FileBrowser.h"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FileBrowser.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1ea385e837dfe6dd47cb45b1d6ef2051"

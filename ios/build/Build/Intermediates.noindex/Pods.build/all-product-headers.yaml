@@ -1,0 +1,65 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/FileBrowser/FileBrowser.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FileBrowser-Swift.h",
+          'external-contents': "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/FileBrowser/FileBrowser.framework/Headers/FileBrowser-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FileBrowser-umbrella.h",
+          'external-contents': "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/Target Support Files/FileBrowser/FileBrowser-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FileBrowser.h",
+          'external-contents': "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/FileBrowser/FileBrowser/FileBrowser.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/FileBrowser/FileBrowser.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FileBrowser.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/Pods_RNFileSelector.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-RNFileSelector-umbrella.h",
+          'external-contents': "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/Target Support Files/Pods-RNFileSelector/Pods-RNFileSelector-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_RNFileSelector-Swift.h",
+          'external-contents': "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/Pods_RNFileSelector.framework/Headers/Pods_RNFileSelector-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Products/Debug-iphonesimulator/Pods_RNFileSelector.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-RNFileSelector.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FileBrowser"
+provides-nominal:
+- "11FileBrowserAAC"
+provides-member:
+- ["11FileBrowserAAC", ""]
+provides-dynamic-lookup:
+- "didSelectFile"
+- "excludesFileExtensions"
+depends-top-level:
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "FBFile"
+- "FileBrowser"
+- "FileListViewController"
+- "FileParser"
+- "String"
+- !private "UIColor"
+- "UINavigationController"
+- "URL"
+depends-member:
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["s7CVarArgP", "FileListViewController"]
+- ["s7CVarArgP", "FileParser"]
+- !private ["s7CVarArgP", "UIColor"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "allowEditing"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "didSelectFile"]
+- !private ["s7CVarArgP", "excludesFileExtensions"]
+- !private ["s7CVarArgP", "excludesFilepaths"]
+- !private ["s7CVarArgP", "fileList"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "parser"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "white"]
+- !private ["s28CustomDebugStringConvertibleP", "FileListViewController"]
+- ["s28CustomDebugStringConvertibleP", "FileParser"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "allowEditing"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "didSelectFile"]
+- !private ["s28CustomDebugStringConvertibleP", "excludesFileExtensions"]
+- !private ["s28CustomDebugStringConvertibleP", "excludesFilepaths"]
+- !private ["s28CustomDebugStringConvertibleP", "fileList"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "parser"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
+- !private ["s17CustomReflectableP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "FileListViewController"]
+- ["s23CustomStringConvertibleP", "FileParser"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "allowEditing"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "didSelectFile"]
+- !private ["s23CustomStringConvertibleP", "excludesFileExtensions"]
+- !private ["s23CustomStringConvertibleP", "excludesFilepaths"]
+- !private ["s23CustomStringConvertibleP", "fileList"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "parser"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- !private ["Se", "backgroundColor"]
+- !private ["SE", "backgroundColor"]
+- !private ["SQ", "FileListViewController"]
+- ["SQ", "FileParser"]
+- !private ["SQ", "UIColor"]
+- ["SQ", ""]
+- !private ["SQ", "allowEditing"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "didSelectFile"]
+- !private ["SQ", "excludesFileExtensions"]
+- !private ["SQ", "excludesFilepaths"]
+- !private ["SQ", "fileList"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "parser"]
+- !private ["SQ", "view"]
+- !private ["SQ", "white"]
+- !private ["s23ExpressibleByNilLiteralP", "backgroundColor"]
+- ["11FileBrowserAAC", "Bool"]
+- ["11FileBrowserAAC", "FBFile"]
+- ["11FileBrowserAAC", "FileListViewController"]
+- ["11FileBrowserAAC", "FileParser"]
+- ["11FileBrowserAAC", "String"]
+- !private ["11FileBrowserAAC", "UIColor"]
+- ["11FileBrowserAAC", "URL"]
+- !private ["11FileBrowserAAC", "deinit"]
+- ["11FileBrowserAAC", "didSelectFile"]
+- ["11FileBrowserAAC", "excludesFileExtensions"]
+- ["11FileBrowserAAC", "excludesFilepaths"]
+- ["11FileBrowserAAC", "fileList"]
+- ["11FileBrowserAAC", "init"]
+- ["11FileBrowserAAC", "parser"]
+- !private ["11FileBrowserAAC", "view"]
+- !private ["11FileBrowser0A18ListViewControllerC", "allowEditing"]
+- !private ["11FileBrowser0A18ListViewControllerC", "deinit"]
+- !private ["11FileBrowser0A18ListViewControllerC", "didSelectFile"]
+- !private ["11FileBrowser0A18ListViewControllerC", "init"]
+- !private ["11FileBrowser0A6ParserC", "documentsURL"]
+- !private ["11FileBrowser0A6ParserC", "excludesFileExtensions"]
+- !private ["11FileBrowser0A6ParserC", "excludesFilepaths"]
+- ["11FileBrowser0A6ParserC", "sharedInstance"]
+- !private ["SH", "FileListViewController"]
+- ["SH", "FileParser"]
+- !private ["SH", "UIColor"]
+- ["SH", ""]
+- !private ["SH", "allowEditing"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "didSelectFile"]
+- !private ["SH", "excludesFileExtensions"]
+- !private ["SH", "excludesFilepaths"]
+- !private ["SH", "fileList"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "parser"]
+- !private ["SH", "view"]
+- !private ["SH", "white"]
+- !private ["So8NSCodingP", "FileListViewController"]
+- ["So8NSCodingP", "FileParser"]
+- !private ["So8NSCodingP", "UIColor"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "allowEditing"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "didSelectFile"]
+- !private ["So8NSCodingP", "excludesFileExtensions"]
+- !private ["So8NSCodingP", "excludesFilepaths"]
+- !private ["So8NSCodingP", "fileList"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "parser"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "white"]
+- !private ["So9NSCopyingP", "white"]
+- !private ["So26NSExtensionRequestHandlingP", "FileListViewController"]
+- ["So26NSExtensionRequestHandlingP", "FileParser"]
+- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "allowEditing"]
+- !private ["So26NSExtensionRequestHandlingP", "didSelectFile"]
+- !private ["So26NSExtensionRequestHandlingP", "excludesFileExtensions"]
+- !private ["So26NSExtensionRequestHandlingP", "excludesFilepaths"]
+- !private ["So26NSExtensionRequestHandlingP", "fileList"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "parser"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So21NSItemProviderReadingP", "white"]
+- !private ["So21NSItemProviderWritingP", "white"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "FBFile"]
+- ["So8NSObjectC", "FileListViewController"]
+- ["So8NSObjectC", "FileParser"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "allowEditing"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- ["So8NSObjectC", "didSelectFile"]
+- ["So8NSObjectC", "excludesFileExtensions"]
+- ["So8NSObjectC", "excludesFilepaths"]
+- ["So8NSObjectC", "fileList"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "parser"]
+- !private ["So8NSObjectC", "view"]
+- !private ["So8NSObjectC", "white"]
+- !private ["So8NSObjectP", "FileListViewController"]
+- ["So8NSObjectP", "FileParser"]
+- !private ["So8NSObjectP", "UIColor"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "allowEditing"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "didSelectFile"]
+- !private ["So8NSObjectP", "excludesFileExtensions"]
+- !private ["So8NSObjectP", "excludesFilepaths"]
+- !private ["So8NSObjectP", "fileList"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "parser"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "white"]
+- !private ["So14NSSecureCodingP", "white"]
+- !private ["Sq", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "FileListViewController"]
+- ["So21UIAppearanceContainerP", "FileParser"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "allowEditing"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "didSelectFile"]
+- !private ["So21UIAppearanceContainerP", "excludesFileExtensions"]
+- !private ["So21UIAppearanceContainerP", "excludesFilepaths"]
+- !private ["So21UIAppearanceContainerP", "fileList"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "parser"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So24UIBarPositioningDelegateP", "allowEditing"]
+- !private ["So24UIBarPositioningDelegateP", "didSelectFile"]
+- !private ["So24UIBarPositioningDelegateP", "init"]
+- !private ["So7UIColorC", "white"]
+- !private ["So18UIContentContainerP", "FileListViewController"]
+- ["So18UIContentContainerP", "FileParser"]
+- !private ["So18UIContentContainerP", "UIColor"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "allowEditing"]
+- !private ["So18UIContentContainerP", "didSelectFile"]
+- !private ["So18UIContentContainerP", "excludesFileExtensions"]
+- !private ["So18UIContentContainerP", "excludesFilepaths"]
+- !private ["So18UIContentContainerP", "fileList"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "parser"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "FileListViewController"]
+- ["So18UIFocusEnvironmentP", "FileParser"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "allowEditing"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "didSelectFile"]
+- !private ["So18UIFocusEnvironmentP", "excludesFileExtensions"]
+- !private ["So18UIFocusEnvironmentP", "excludesFilepaths"]
+- !private ["So18UIFocusEnvironmentP", "fileList"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "parser"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- ["So22UINavigationControllerC", "Bool"]
+- ["So22UINavigationControllerC", "FBFile"]
+- ["So22UINavigationControllerC", "FileListViewController"]
+- ["So22UINavigationControllerC", "FileParser"]
+- ["So22UINavigationControllerC", "String"]
+- !private ["So22UINavigationControllerC", "UIColor"]
+- ["So22UINavigationControllerC", "URL"]
+- ["So22UINavigationControllerC", ""]
+- ["So22UINavigationControllerC", "didSelectFile"]
+- ["So22UINavigationControllerC", "excludesFileExtensions"]
+- ["So22UINavigationControllerC", "excludesFilepaths"]
+- ["So22UINavigationControllerC", "fileList"]
+- ["So22UINavigationControllerC", "init"]
+- !private ["So22UINavigationControllerC", "init"]
+- ["So22UINavigationControllerC", "parser"]
+- !private ["So22UINavigationControllerC", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "FileListViewController"]
+- ["So30UIPasteConfigurationSupportingP", "FileParser"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "allowEditing"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "didSelectFile"]
+- !private ["So30UIPasteConfigurationSupportingP", "excludesFileExtensions"]
+- !private ["So30UIPasteConfigurationSupportingP", "excludesFilepaths"]
+- !private ["So30UIPasteConfigurationSupportingP", "fileList"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "parser"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "FBFile"]
+- ["So11UIResponderC", "FileListViewController"]
+- ["So11UIResponderC", "FileParser"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "URL"]
+- !private ["So11UIResponderC", "allowEditing"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "didSelectFile"]
+- ["So11UIResponderC", "excludesFileExtensions"]
+- ["So11UIResponderC", "excludesFilepaths"]
+- ["So11UIResponderC", "fileList"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "parser"]
+- !private ["So11UIResponderC", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "FileListViewController"]
+- ["So30UIResponderStandardEditActionsP", "FileParser"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "allowEditing"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "didSelectFile"]
+- !private ["So30UIResponderStandardEditActionsP", "excludesFileExtensions"]
+- !private ["So30UIResponderStandardEditActionsP", "excludesFilepaths"]
+- !private ["So30UIResponderStandardEditActionsP", "fileList"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "parser"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So20UIScrollViewDelegateP", "allowEditing"]
+- !private ["So20UIScrollViewDelegateP", "didSelectFile"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So19UISearchBarDelegateP", "allowEditing"]
+- !private ["So19UISearchBarDelegateP", "didSelectFile"]
+- !private ["So19UISearchBarDelegateP", "init"]
+- !private ["So26UISearchControllerDelegateP", "allowEditing"]
+- !private ["So26UISearchControllerDelegateP", "didSelectFile"]
+- !private ["So26UISearchControllerDelegateP", "init"]
+- !private ["So23UISearchResultsUpdatingP", "allowEditing"]
+- !private ["So23UISearchResultsUpdatingP", "didSelectFile"]
+- !private ["So23UISearchResultsUpdatingP", "init"]
+- !private ["So16UIStateRestoringP", "FileListViewController"]
+- ["So16UIStateRestoringP", "FileParser"]
+- !private ["So16UIStateRestoringP", "UIColor"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "allowEditing"]
+- !private ["So16UIStateRestoringP", "didSelectFile"]
+- !private ["So16UIStateRestoringP", "excludesFileExtensions"]
+- !private ["So16UIStateRestoringP", "excludesFilepaths"]
+- !private ["So16UIStateRestoringP", "fileList"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "parser"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So21UITableViewDataSourceP", "allowEditing"]
+- !private ["So21UITableViewDataSourceP", "didSelectFile"]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So19UITableViewDelegateP", "allowEditing"]
+- !private ["So19UITableViewDelegateP", "didSelectFile"]
+- !private ["So19UITableViewDelegateP", "init"]
+- !private ["So18UITraitEnvironmentP", "FileListViewController"]
+- ["So18UITraitEnvironmentP", "FileParser"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "allowEditing"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "didSelectFile"]
+- !private ["So18UITraitEnvironmentP", "excludesFileExtensions"]
+- !private ["So18UITraitEnvironmentP", "excludesFilepaths"]
+- !private ["So18UITraitEnvironmentP", "fileList"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "parser"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So23UIUserActivityRestoringP", "FileListViewController"]
+- ["So23UIUserActivityRestoringP", "FileParser"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "allowEditing"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "didSelectFile"]
+- !private ["So23UIUserActivityRestoringP", "excludesFileExtensions"]
+- !private ["So23UIUserActivityRestoringP", "excludesFilepaths"]
+- !private ["So23UIUserActivityRestoringP", "fileList"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "parser"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So6UIViewC", "backgroundColor"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "FBFile"]
+- ["So16UIViewControllerC", "FileListViewController"]
+- ["So16UIViewControllerC", "FileParser"]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UIColor"]
+- ["So16UIViewControllerC", "URL"]
+- !private ["So16UIViewControllerC", "allowEditing"]
+- ["So16UIViewControllerC", "didSelectFile"]
+- ["So16UIViewControllerC", "excludesFileExtensions"]
+- ["So16UIViewControllerC", "excludesFilepaths"]
+- ["So16UIViewControllerC", "fileList"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "parser"]
+- !private ["So16UIViewControllerC", "view"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "allowEditing"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "didSelectFile"]
+- !private ["So34UIViewControllerPreviewingDelegateP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FileListViewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "FileParser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "allowEditing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didSelectFile"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "excludesFileExtensions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "excludesFilepaths"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fileList"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+- !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- "11FileBrowserAAC"
+- !private "11FileBrowser0A18ListViewControllerC"
+- "11FileBrowser0A6ParserC"
+- "SH"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So24UIBarPositioningDelegateP"
+- !private "So7UIColorC"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- "So22UINavigationControllerC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- !private "So19UISearchBarDelegateP"
+- !private "So26UISearchControllerDelegateP"
+- !private "So23UISearchResultsUpdatingP"
+- "So16UIStateRestoringP"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So34UIViewControllerPreviewingDelegateP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s26_ExpressibleByColorLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/Target Support Files/FileBrowser/FileBrowser-umbrella.h"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/FileBrowser/FileBrowser/FileBrowser.h"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FileBrowser.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "49a0adc7a19e19b6cdbfde16fa49069d"

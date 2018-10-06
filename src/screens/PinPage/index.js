@@ -43,7 +43,7 @@ export default class PinPage extends Component {
     balancePromise.then((balance) => {
       balance = parseInt(balance) / 1e18;
       this.setState({ balance: balance });
-      console.log("balance:", balance);
+      // console.log("balance:", balance);
 
       var walletData = walletUtil.saveWalletData(this.state);
       this.setState({ walletData: walletData });
@@ -78,7 +78,7 @@ export default class PinPage extends Component {
     wallet.provider = ethers.providers.getDefaultProvider("ropsten");
     var balancePromise = wallet.getBalance();
     balancePromise.then((balanceRaw) => {
-      console.log("balace",balanceRaw)
+      // console.log("balace",balanceRaw)
       var balance = parseInt(balanceRaw) / 1e18;
       this.setState({ balance: balance });
       var walletData = this.state.walletData;

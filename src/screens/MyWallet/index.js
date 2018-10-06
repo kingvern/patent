@@ -17,11 +17,20 @@ import styles from "./styles";
 import store from "../../store";
 import axios from "axios";
 
+
+import RNFileSelector from "react-native-file-selector";
+import RNFS from "react-native-fs";
+
+import abi from "../../contract/abi";
+
+
 var CryptoJS = require("crypto-js");
 var ethers = require("ethers");
 
 var walletUtil = require("../../util/wallet");
 var storageUtil = require("../../util/storage");
+
+let contractAddress = "0x4D3F0D9a79ee462c29608De5A7f2692613502d70";
 
 export default class MyWallet extends Component {
   // 从NewWallet或MyWallet传进参数：wallet，pin
@@ -88,13 +97,14 @@ export default class MyWallet extends Component {
       patentTime: "",
       patentDesc: "",
 
-      hash: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc",
-      transaction: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc"
+      hash: "",
+      transaction: ""
 
 
     };
 
   }
+
 
   componentDidMount() {
 
@@ -112,6 +122,18 @@ export default class MyWallet extends Component {
 
   setModalVisible(nimade) {
     this.setState({ ModalVisible: nimade });
+  }
+
+  clearForm() {
+    this.setState({
+      patenter: "",
+      patentName: "",
+      patentTime: "",
+      patentDesc: "",
+
+      hash: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc",
+      transaction: ""
+    });
   }
 
   componentWillUnmount() {
@@ -135,7 +157,7 @@ export default class MyWallet extends Component {
   }
 
   reqApiListData() {
-    let api = "http://39.106.169.68:8080/api/v1/dev/mydoclist/" + "0xa1c2ba713363d23253f46854b467dde717e6f4bc";
+    let api = "http://39.106.169.68:8080/api/v1/dev/mydoclist/" + this.state.address;
     axios.get(api).then((res) => {
       console.log(res);
       if (res.status == 200) {
@@ -181,12 +203,12 @@ export default class MyWallet extends Component {
         this.setState({
           active: 2,
           hasAccount: true,
-          address: res.data.address,
-          idNum: res.data.identify,
-          email: res.data.mail,
-          phone: res.data.phone,
-          username: res.data.username,
-          name: res.data.name
+          address: res.data.data.address,
+          idNum: res.data.data.identify,
+          email: res.data.data.mail,
+          phone: res.data.data.phone,
+          username: res.data.data.username,
+          name: res.data.data.name
         });
         // console.log(this.state.ListData);
       }
@@ -194,6 +216,19 @@ export default class MyWallet extends Component {
     }).catch(err => {
       console.log(err);
     });
+  }
+
+  sendTx(wallet) {
+    console.log("sendtx start");
+    wallet.provider = ethers.providers.getDefaultProvider("ropsten");
+
+    var contract = new ethers.Contract(contractAddress, abi, wallet);
+    console.log("param,", this.state.address, this.state.patenter, this.state.patentName, this.state.patentTime, this.state.patentDesc, this.state.hash);
+    contract.newBanquan(this.state.address, this.state.patenter, this.state.patentName, this.state.patentTime, this.state.patentDesc, this.state.hash).then((tx) => {
+      console.log("tx:", tx);
+      this.setState({ transaction: tx.hash });
+      this.postApiPatent();
+    }).catch(err => console.log(err));
   }
 
   postApiPatent() {
@@ -259,7 +294,7 @@ export default class MyWallet extends Component {
           </Left>
         </ListItem>
         <ListItem onPress={() => {
-          this.open(rawData.TxHash);
+          this.open(rawData.transaction);
         }}>
           <Left>
             <Text style={styles.listText}>{rawData.transaction.substring(0, 7)}</Text>
@@ -347,15 +382,13 @@ export default class MyWallet extends Component {
         return (
           <Content>
             <H3 style={{ color: "#000", alignSelf: "center", marginTop: 10 }}>恭喜您，您的版权存证已经申请成功！</H3>
-            <Text style={{ padding: 10, fontSize: 15, alignSelf: "center", marginTop: 10 }}>
-              申请信息
-            </Text>
-            <Text bordered style={{ marginTop: 20 }}>声明人：***</Text>
-            <Text bordered style={{ marginTop: 20 }}>版权名称：***</Text>
             <Text bordered style={{ marginTop: 20 }} onPress={() => {
-              this.open(this.state.TxHash);
-            }}>交易hash：</Text>
-            <Button full dark style={{ marginTop: 22 }} onPress={_ => this.setState({ newHasSuccess: false })}>
+              this.open(this.state.transaction);
+            }}>交易hash：{this.state.transaction}</Text>
+            <Button full dark style={{ marginTop: 22 }} onPress={_ => {
+              this.setState({ newHasSuccess: false });
+              this.clearForm();
+            }}>
               <Text>继续申请</Text></Button>
           </Content>
 
@@ -363,6 +396,11 @@ export default class MyWallet extends Component {
       } else {
         return (
           <Content>
+            {/*<RNFileSelector title={"Select File"} visible={true} onDone={() => {*/}
+            {/*console.log("file selected: " + path);*/}
+            {/*}} onCancel={() => {*/}
+            {/*console.log("cancelled");*/}
+            {/*}}/>*/}
             <H3 style={{ color: "#000", alignSelf: "center", marginTop: 10 }}>申请版权存证</H3>
             <Input bordered placeholder="声明人：" style={{ marginTop: 20 }}
                    value={this.state.patenter} onChangeText={val => this.setState({ patenter: val })}/>
@@ -372,10 +410,43 @@ export default class MyWallet extends Component {
                    value={this.state.patentTime} onChangeText={val => this.setState({ patentTime: val })}/>
             <Input bordered placeholder="简介：" style={{ marginTop: 20 }}
                    value={this.state.patentDesc} onChangeText={val => this.setState({ patentDesc: val })}/>
-            <Button full dark style={{ marginTop: 20 }}>
+            <Button full dark style={{ marginTop: 20 }} onPress={_ => {
+              console.log(RNFileSelector);
+              RNFileSelector.Show(
+                {
+                  title: "Select File",
+                  onDone: (path) => {
+
+                    console.log(RNFS);
+                    console.log("file selected: " + path);
+
+                    RNFS.read(path)
+                      .then((result) => {
+                        console.log(result);
+                        var hash = CryptoJS.MD5(CryptoJS.enc.Latin1.parse(result));
+                        var md5 = hash.toString(CryptoJS.enc.Hex);
+                        this.setState({ hash: md5 });
+                        console.log("hash", md5);
+                      })
+                      .catch((err) => {
+                        console.log(err.message);
+                      });
+                  },
+                  onCancel: () => {
+                    console.log("cancelled");
+                  }
+                }
+              );
+            }}>
               <Text>选择存证</Text>
             </Button>
-            <Button full dark style={{ marginTop: 20 }} onPress={_ => this.postApiPatent()}>
+            <Button full dark style={{ marginTop: 20 }} onPress={_ => {
+              var wallet = walletUtil.checkPin(this.state.walletData, this.state.pin);
+              console.log(wallet);
+              if (wallet) {
+                this.sendTx(wallet);
+              }
+            }}>
               <Text>写入区块链</Text>
             </Button>
           </Content>

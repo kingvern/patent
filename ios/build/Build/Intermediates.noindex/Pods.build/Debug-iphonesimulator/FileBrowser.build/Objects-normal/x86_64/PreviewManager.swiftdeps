@@ -1,0 +1,442 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PreviewManager"
+- "PreviewItem"
+provides-nominal:
+- "11FileBrowser14PreviewManagerC"
+- "11FileBrowser11PreviewItemC"
+provides-member:
+- ["11FileBrowser14PreviewManagerC", ""]
+- ["11FileBrowser11PreviewItemC", ""]
+provides-dynamic-lookup:
+- "numberOfPreviewItems"
+- "previewController"
+- "previewItemURL"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Bundle"
+- "CastingPrecedence"
+- "FBFile"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "NSObject"
+- "PreviewItem"
+- "PreviewManager"
+- !private "PreviewTransitionViewController"
+- "QLPreviewController"
+- "QLPreviewControllerDataSource"
+- "QLPreviewItem"
+- !private "StringLiteralType"
+- "UIViewController"
+- "URL"
+- !private "WebviewPreviewViewContoller"
+- !private "||"
+depends-member:
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So8NSBundleC", "init"]
+- !private ["s7CVarArgP", "Bundle"]
+- !private ["s7CVarArgP", "PreviewItem"]
+- !private ["s7CVarArgP", "PreviewTransitionViewController"]
+- !private ["s7CVarArgP", "WebviewPreviewViewContoller"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "dataSource"]
+- !private ["s7CVarArgP", "file"]
+- !private ["s7CVarArgP", "filePath"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "numberOfPreviewItems"]
+- ["s7CVarArgP", "numberOfPreviewItemsInPreviewController"]
+- ["s7CVarArgP", "previewController"]
+- ["s7CVarArgP", "previewItemTitle"]
+- ["s7CVarArgP", "previewItemURL"]
+- !private ["s7CVarArgP", "quickLookPreviewController"]
+- !private ["s7CVarArgP", "type"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Bundle"]
+- !private ["s28CustomDebugStringConvertibleP", "PreviewItem"]
+- !private ["s28CustomDebugStringConvertibleP", "PreviewTransitionViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "WebviewPreviewViewContoller"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "dataSource"]
+- !private ["s28CustomDebugStringConvertibleP", "file"]
+- !private ["s28CustomDebugStringConvertibleP", "filePath"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "numberOfPreviewItems"]
+- ["s28CustomDebugStringConvertibleP", "numberOfPreviewItemsInPreviewController"]
+- ["s28CustomDebugStringConvertibleP", "previewController"]
+- ["s28CustomDebugStringConvertibleP", "previewItemTitle"]
+- ["s28CustomDebugStringConvertibleP", "previewItemURL"]
+- !private ["s28CustomDebugStringConvertibleP", "quickLookPreviewController"]
+- !private ["s28CustomDebugStringConvertibleP", "type"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Bundle"]
+- !private ["s23CustomStringConvertibleP", "PreviewItem"]
+- !private ["s23CustomStringConvertibleP", "PreviewTransitionViewController"]
+- !private ["s23CustomStringConvertibleP", "WebviewPreviewViewContoller"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "dataSource"]
+- !private ["s23CustomStringConvertibleP", "file"]
+- !private ["s23CustomStringConvertibleP", "filePath"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "numberOfPreviewItems"]
+- ["s23CustomStringConvertibleP", "numberOfPreviewItemsInPreviewController"]
+- ["s23CustomStringConvertibleP", "previewController"]
+- ["s23CustomStringConvertibleP", "previewItemTitle"]
+- ["s23CustomStringConvertibleP", "previewItemURL"]
+- !private ["s23CustomStringConvertibleP", "quickLookPreviewController"]
+- !private ["s23CustomStringConvertibleP", "type"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", "Bundle"]
+- !private ["SQ", "JSON"]
+- !private ["SQ", "PLIST"]
+- !private ["SQ", "PreviewItem"]
+- !private ["SQ", "PreviewTransitionViewController"]
+- !private ["SQ", "WebviewPreviewViewContoller"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "dataSource"]
+- !private ["SQ", "file"]
+- !private ["SQ", "filePath"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "numberOfPreviewItems"]
+- ["SQ", "numberOfPreviewItemsInPreviewController"]
+- ["SQ", "previewController"]
+- ["SQ", "previewItemTitle"]
+- ["SQ", "previewItemURL"]
+- !private ["SQ", "quickLookPreviewController"]
+- !private ["SQ", "type"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["11FileBrowser6FBFileC", "filePath"]
+- !private ["11FileBrowser6FBFileC", "type"]
+- !private ["11FileBrowser10FBFileTypeO", "JSON"]
+- !private ["11FileBrowser10FBFileTypeO", "PLIST"]
+- !private ["11FileBrowser10FBFileTypeO", "deinit"]
+- !private ["SH", "Bundle"]
+- !private ["SH", "JSON"]
+- !private ["SH", "PLIST"]
+- !private ["SH", "PreviewItem"]
+- !private ["SH", "PreviewTransitionViewController"]
+- !private ["SH", "WebviewPreviewViewContoller"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "dataSource"]
+- !private ["SH", "file"]
+- !private ["SH", "filePath"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "numberOfPreviewItems"]
+- ["SH", "numberOfPreviewItemsInPreviewController"]
+- ["SH", "previewController"]
+- ["SH", "previewItemTitle"]
+- ["SH", "previewItemURL"]
+- !private ["SH", "quickLookPreviewController"]
+- !private ["SH", "type"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "dataSource"]
+- !private ["So8NSCodingP", "file"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "quickLookPreviewController"]
+- !private ["So26NSExtensionRequestHandlingP", "dataSource"]
+- !private ["So26NSExtensionRequestHandlingP", "file"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "quickLookPreviewController"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Bundle"]
+- ["So8NSObjectC", "FBFile"]
+- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "PreviewItem"]
+- !private ["So8NSObjectC", "PreviewTransitionViewController"]
+- ["So8NSObjectC", "QLPreviewController"]
+- ["So8NSObjectC", "QLPreviewItem"]
+- ["So8NSObjectC", "UIViewController"]
+- ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "WebviewPreviewViewContoller"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "dataSource"]
+- !private ["So8NSObjectC", "file"]
+- ["So8NSObjectC", "filePath"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "numberOfPreviewItems"]
+- ["So8NSObjectC", "numberOfPreviewItemsInPreviewController"]
+- ["So8NSObjectC", "previewController"]
+- ["So8NSObjectC", "previewItemTitle"]
+- ["So8NSObjectC", "previewItemURL"]
+- ["So8NSObjectC", "previewViewControllerForFile"]
+- !private ["So8NSObjectC", "quickLookPreviewController"]
+- !private ["So8NSObjectC", "type"]
+- !private ["So8NSObjectP", "Bundle"]
+- !private ["So8NSObjectP", "PreviewItem"]
+- !private ["So8NSObjectP", "PreviewTransitionViewController"]
+- !private ["So8NSObjectP", "WebviewPreviewViewContoller"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "dataSource"]
+- !private ["So8NSObjectP", "file"]
+- !private ["So8NSObjectP", "filePath"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "numberOfPreviewItems"]
+- ["So8NSObjectP", "numberOfPreviewItemsInPreviewController"]
+- ["So8NSObjectP", "previewController"]
+- ["So8NSObjectP", "previewItemTitle"]
+- ["So8NSObjectP", "previewItemURL"]
+- !private ["So8NSObjectP", "quickLookPreviewController"]
+- !private ["So8NSObjectP", "type"]
+- ["11FileBrowser11PreviewItemC", "URL"]
+- ["11FileBrowser11PreviewItemC", "deinit"]
+- ["11FileBrowser11PreviewItemC", "filePath"]
+- ["11FileBrowser11PreviewItemC", "init"]
+- ["11FileBrowser11PreviewItemC", "previewItemTitle"]
+- ["11FileBrowser11PreviewItemC", "previewItemURL"]
+- ["11FileBrowser14PreviewManagerC", "Bool"]
+- !private ["11FileBrowser14PreviewManagerC", "Bundle"]
+- ["11FileBrowser14PreviewManagerC", "FBFile"]
+- ["11FileBrowser14PreviewManagerC", "Int"]
+- !private ["11FileBrowser14PreviewManagerC", "PreviewItem"]
+- !private ["11FileBrowser14PreviewManagerC", "PreviewTransitionViewController"]
+- ["11FileBrowser14PreviewManagerC", "QLPreviewController"]
+- ["11FileBrowser14PreviewManagerC", "QLPreviewItem"]
+- ["11FileBrowser14PreviewManagerC", "UIViewController"]
+- ["11FileBrowser14PreviewManagerC", "URL"]
+- !private ["11FileBrowser14PreviewManagerC", "WebviewPreviewViewContoller"]
+- ["11FileBrowser14PreviewManagerC", "deinit"]
+- ["11FileBrowser14PreviewManagerC", "filePath"]
+- ["11FileBrowser14PreviewManagerC", "init"]
+- ["11FileBrowser14PreviewManagerC", "numberOfPreviewItems"]
+- ["11FileBrowser14PreviewManagerC", "numberOfPreviewItemsInPreviewController"]
+- ["11FileBrowser14PreviewManagerC", "previewController"]
+- ["11FileBrowser14PreviewManagerC", "previewViewControllerForFile"]
+- !private ["11FileBrowser31PreviewTransitionViewControllerC", "deinit"]
+- !private ["11FileBrowser31PreviewTransitionViewControllerC", "init"]
+- !private ["11FileBrowser31PreviewTransitionViewControllerC", "quickLookPreviewController"]
+- !private ["So19QLPreviewControllerC", "dataSource"]
+- !private ["So29QLPreviewControllerDataSourceP", "Bundle"]
+- !private ["So29QLPreviewControllerDataSourceP", "PreviewItem"]
+- !private ["So29QLPreviewControllerDataSourceP", "PreviewTransitionViewController"]
+- !private ["So29QLPreviewControllerDataSourceP", "WebviewPreviewViewContoller"]
+- ["So29QLPreviewControllerDataSourceP", ""]
+- !private ["So29QLPreviewControllerDataSourceP", "filePath"]
+- ["So29QLPreviewControllerDataSourceP", "numberOfPreviewItems"]
+- ["So29QLPreviewControllerDataSourceP", "numberOfPreviewItemsInPreviewController"]
+- ["So29QLPreviewControllerDataSourceP", "previewController"]
+- ["So13QLPreviewItemP", ""]
+- !private ["So13QLPreviewItemP", "filePath"]
+- !private ["So13QLPreviewItemP", "init"]
+- ["So13QLPreviewItemP", "previewItemTitle"]
+- ["So13QLPreviewItemP", "previewItemURL"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "JSON"]
+- !private ["SY", "PLIST"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIAppearanceContainerP", "dataSource"]
+- !private ["So21UIAppearanceContainerP", "file"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "quickLookPreviewController"]
+- !private ["So18UIContentContainerP", "dataSource"]
+- !private ["So18UIContentContainerP", "file"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "quickLookPreviewController"]
+- !private ["So18UIFocusEnvironmentP", "dataSource"]
+- !private ["So18UIFocusEnvironmentP", "file"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "quickLookPreviewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
+- !private ["So30UIPasteConfigurationSupportingP", "file"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "quickLookPreviewController"]
+- !private ["So11UIResponderC", "dataSource"]
+- !private ["So11UIResponderC", "file"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "quickLookPreviewController"]
+- !private ["So30UIResponderStandardEditActionsP", "dataSource"]
+- !private ["So30UIResponderStandardEditActionsP", "file"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "quickLookPreviewController"]
+- !private ["So16UIStateRestoringP", "dataSource"]
+- !private ["So16UIStateRestoringP", "file"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "quickLookPreviewController"]
+- !private ["So18UITraitEnvironmentP", "dataSource"]
+- !private ["So18UITraitEnvironmentP", "file"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "quickLookPreviewController"]
+- !private ["So23UIUserActivityRestoringP", "dataSource"]
+- !private ["So23UIUserActivityRestoringP", "file"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "quickLookPreviewController"]
+- !private ["So16UIViewControllerC", "dataSource"]
+- !private ["So16UIViewControllerC", "file"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "quickLookPreviewController"]
+- !private ["11FileBrowser27WebviewPreviewViewContollerC", "deinit"]
+- !private ["11FileBrowser27WebviewPreviewViewContollerC", "file"]
+- !private ["11FileBrowser27WebviewPreviewViewContollerC", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PreviewItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PreviewTransitionViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "WebviewPreviewViewContoller"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "file"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "filePath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "numberOfPreviewItems"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "numberOfPreviewItemsInPreviewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "previewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "previewItemTitle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "previewItemURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "quickLookPreviewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "SK"
+- !private "Sb"
+- !private "So8NSBundleC"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "11FileBrowser6FBFileC"
+- !private "11FileBrowser10FBFileTypeO"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "11FileBrowser11PreviewItemC"
+- "11FileBrowser14PreviewManagerC"
+- !private "11FileBrowser31PreviewTransitionViewControllerC"
+- !private "So19QLPreviewControllerC"
+- "So29QLPreviewControllerDataSourceP"
+- "So13QLPreviewItemP"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So16UIViewControllerC"
+- !private "11FileBrowser27WebviewPreviewViewContollerC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/Target Support Files/FileBrowser/FileBrowser-umbrella.h"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/node_modules/react-native-file-selector/ios/Pods/FileBrowser/FileBrowser/FileBrowser.h"
+- "/Users/litex/Desktop/patent/dice2win_rn.git/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FileBrowser.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "429e14be64e0e2cf3d7239166e6db571"

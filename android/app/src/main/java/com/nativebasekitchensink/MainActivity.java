@@ -1,6 +1,7 @@
 package com.nativebasekitchensink;
 
 import com.facebook.react.ReactActivity;
+import ui.fileselector.RNFileSelectorPackage;
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +13,7 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "NativebaseKitchenSink";
     }
+
+
+
 }
