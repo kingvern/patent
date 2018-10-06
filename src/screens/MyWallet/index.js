@@ -45,32 +45,62 @@ export default class MyWallet extends Component {
       active: 0,
       hasAccount: false,
       newHasSuccess: false,
-      ListData:[
+      ListData: [
         {
-          TxHash:'***************',
-          TimeStamp:'***************'
+          id: 1,
+          address: "0xa1c2ba713363d23253f46854b467dde717e6f4bc",
+          user: "dayu",
+          docname: "weichat",
+          time: "2018-10-11",
+          transaction: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc"
+
         },
         {
-          TxHash:'***************',
-          TimeStamp:'***************'
+          id: 2,
+          address: "0xa1c2ba713363d23253f46854b467dde717e6f4bc",
+          user: "dayu",
+          docname: "qq",
+          time: "2018-10-11",
+          transaction: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc"
+
         },
         {
-          TxHash:'***************',
-          TimeStamp:'***************'
-        },
-        {
-          TxHash:'***************',
-          TimeStamp:'***************'
-        },
+          id: 3,
+          address: "0xa1c2ba713363d23253f46854b467dde717e6f4bc",
+          user: "dayu",
+          docname: "qq",
+          time: "2018-10-11",
+          transaction: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc"
+
+        }
+
 
       ],
-      TxHash: ''
+      TxHash: "",
+      name: "",
+      username: "",
+      phone: "",
+      email: "",
+      idNum: "",
+
+      patenter: "",
+      patentName: "",
+      patentTime: "",
+      patentDesc: "",
+
+      hash: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc",
+      transaction: "0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc"
+
 
     };
 
   }
 
   componentDidMount() {
+
+    console.log("reqApiHasAccount start");
+    this.reqApiHasAccount();
+
     this.setState(store.getState());
     console.log("this.state:", store.getState());
     console.log("this.state:", this.state);
@@ -105,20 +135,90 @@ export default class MyWallet extends Component {
   }
 
   reqApiListData() {
-    let api = ''
+    let api = "http://39.106.169.68:8080/api/v1/dev/mydoclist/" + "0xa1c2ba713363d23253f46854b467dde717e6f4bc";
     axios.get(api).then((res) => {
       console.log(res);
       if (res.status == 200) {
-        this.setState({ListData:res.data});
-        console.log(this.state.ListData);
+
+        console.log(res.data);
+        this.setState({ ListData: res.data });
+        console.log("list", this.state.ListData);
       }
       // const result = res.data.data;
     }).catch(err => {
       console.log(err);
     });
-
   }
 
+  postApiAccount() {
+    let api = "http://39.106.169.68:8080/api/v1/dev/adduser";
+    axios.post(api, {
+        "address": this.state.address,
+        "name": this.state.name,
+        "username": this.state.username,
+        "phone": this.state.phone,
+        "mail": this.state.email,
+        "identify": this.state.idNum
+      }
+    ).then((res) => {
+      console.log(res);
+      if (res.status == 200) {
+        if (res.data.res) {
+          this.setState({ hasAccount: true });
+        }
+      }
+      // const result = res.data.data;
+    }).catch(err => {
+      console.log(err);
+    });
+  }
+
+  reqApiHasAccount() {
+    let api = "http://39.106.169.68:8080/api/v1/dev/ishave/" + this.state.address;
+    axios.get(api).then((res) => {
+      console.log("reqApiHasAccount", res);
+      if (res.data.res) {
+        this.setState({
+          active: 2,
+          hasAccount: true,
+          address: res.data.address,
+          idNum: res.data.identify,
+          email: res.data.mail,
+          phone: res.data.phone,
+          username: res.data.username,
+          name: res.data.name
+        });
+        // console.log(this.state.ListData);
+      }
+      const result = res.data.data;
+    }).catch(err => {
+      console.log(err);
+    });
+  }
+
+  postApiPatent() {
+    let api = "http://39.106.169.68:8080/api/v1/dev/uploaddoc";
+    axios.post(api, {
+        "address": this.state.address,
+        "user": this.state.patenter,
+        "docname": this.state.patentName,
+        "time": this.state.patentTime,
+        "info": this.state.patentDesc,
+        "hash": this.state.hash,
+        "transaction": this.state.transaction
+      }
+    ).then((res) => {
+      console.log("postApiPatent", res);
+      if (res.status == 200) {
+        if (res.data.res) {
+          this.setState({ newHasSuccess: true });
+        }
+      }
+      // const result = res.data.data;
+    }).catch(err => {
+      console.log(err);
+    });
+  }
 
 
   refreshBalance(wallet) {
@@ -126,7 +226,7 @@ export default class MyWallet extends Component {
     wallet.provider = ethers.providers.getDefaultProvider("ropsten");
     var balancePromise = wallet.getBalance();
     balancePromise.then((balanceRaw) => {
-      console.log("balace", balanceRaw);
+      // console.log("balace", balanceRaw);
       var balance = parseInt(balanceRaw) / 1e18;
       this.setState({ balance: balance });
       var walletData = {
@@ -141,28 +241,35 @@ export default class MyWallet extends Component {
         walletData: walletData
       };
       store.dispatch(action);
-      console.log("MyWalletPage:", walletData);
+      // console.log("MyWalletPage:", walletData);
     });
   }
 
-  open=(TxHash)=>{
-    let url = 'https://ropsten.etherscan.io/tx/'+TxHash;
-    Linking.openURL(url)
-  }
+  open = (TxHash) => {
+    let url = "https://ropsten.etherscan.io/tx/" + TxHash;
+    Linking.openURL(url);
+  };
 
   renderItem(rawData, idx) {
     return (
-      <ListItem key={idx} onPress={() => {
-        this.open(rawData.TxHash);
-      }}>
-        <Left>
-          <Text style={styles.listText}>{rawData.TxHash}</Text>
+      <View key={idx}>
+        <ListItem>
+          <Left>
+            <Text style={styles.listText}>{rawData.user} -- {rawData.docname}</Text>
+          </Left>
+        </ListItem>
+        <ListItem onPress={() => {
+          this.open(rawData.TxHash);
+        }}>
+          <Left>
+            <Text style={styles.listText}>{rawData.transaction.substring(0, 7)}</Text>
 
-        </Left>
-        <Body>
-        <Text style={styles.listText}>{rawData.TimeStamp}</Text>
-        </Body>
-      </ListItem>
+          </Left>
+          <Body>
+          <Text style={styles.listText}>{rawData.updated_at}</Text>
+          </Body>
+        </ListItem>
+      </View>
     );
   }
 
@@ -176,10 +283,10 @@ export default class MyWallet extends Component {
             <Text style={{ padding: 10, fontSize: 15, alignSelf: "center", marginTop: 10 }}>
               个人信息
             </Text>
-            <Text bordered style={{ marginTop: 20 }}>姓名：***</Text>
-            <Text bordered style={{ marginTop: 20 }}>用户名：***</Text>
-            <Text bordered style={{ marginTop: 20 }}>手机：***</Text>
-            <Text bordered style={{ marginTop: 20 }}>身份证号：***</Text>
+            <Text bordered style={{ marginTop: 20 }}>姓名：{this.state.name}</Text>
+            <Text bordered style={{ marginTop: 20 }}>用户名：{this.state.username}</Text>
+            <Text bordered style={{ marginTop: 20 }}>手机：{this.state.phone}</Text>
+            <Text bordered style={{ marginTop: 20 }}>身份证号：{this.state.idNum}</Text>
             <Button full danger style={{ marginTop: 22 }} onPress={() => {
               AsyncStorage.clear().then(() => this.props.navigation.navigate("MainPage"));
               clearInterval(this.timerID);
@@ -194,12 +301,17 @@ export default class MyWallet extends Component {
             <Text style={{ padding: 10, fontSize: 15, alignSelf: "center", marginTop: 10 }}>
               请修改个人信息
             </Text>
-            <Input bordered placeholder="姓名：" style={{ marginTop: 20 }}/>
-            <Input bordered placeholder="用户名：" style={{ marginTop: 20 }}/>
-            <Input bordered placeholder="邮箱：" style={{ marginTop: 20 }}/>
-            <Input bordered placeholder="手机：" style={{ marginTop: 20 }}/>
-            <Input bordered placeholder="身份证号:" style={{ marginTop: 20 }}/>
-            <Button full dark onPress={_ => this.setState({ hasAccount: true })}>
+            <Input bordered placeholder="姓名：" style={{ marginTop: 20 }}
+                   value={this.state.name} onChangeText={val => this.setState({ name: val })}/>
+            <Input bordered placeholder="用户名：" style={{ marginTop: 20 }}
+                   value={this.state.username} onChangeText={val => this.setState({ username: val })}/>
+            <Input bordered placeholder="邮箱：" style={{ marginTop: 20 }}
+                   value={this.state.email} onChangeText={val => this.setState({ email: val })}/>
+            <Input bordered placeholder="手机：" style={{ marginTop: 20 }}
+                   value={this.state.phone} onChangeText={val => this.setState({ phone: val })}/>
+            <Input bordered placeholder="身份证号:" style={{ marginTop: 20 }}
+                   value={this.state.idNum} onChangeText={val => this.setState({ idNum: val })}/>
+            <Button full dark onPress={_ => this.postApiAccount()}>
               <Text>确定修改</Text>
             </Button>
 
@@ -215,7 +327,7 @@ export default class MyWallet extends Component {
       // 列表
       return (
         <Content>
-          <H3 style={{ color: "#000", alignSelf: "center", marginTop: 10 }}>您已经申请的版权存证</H3>
+          <H3 style={{ color: "#000", textAlign: "center", marginTop: 10 }}>您已经申请的版权存证</H3>
           <List>
             <ListItem itemHeader first style={{ marginTop: 20 }}>
               <Left>
@@ -240,11 +352,11 @@ export default class MyWallet extends Component {
             </Text>
             <Text bordered style={{ marginTop: 20 }}>声明人：***</Text>
             <Text bordered style={{ marginTop: 20 }}>版权名称：***</Text>
-            <Text bordered style={{ marginTop: 20 }}  onPress={() => {
+            <Text bordered style={{ marginTop: 20 }} onPress={() => {
               this.open(this.state.TxHash);
-            }}>交易hash：***</Text>
+            }}>交易hash：</Text>
             <Button full dark style={{ marginTop: 22 }} onPress={_ => this.setState({ newHasSuccess: false })}>
-             <Text>继续申请</Text></Button>
+              <Text>继续申请</Text></Button>
           </Content>
 
         );
@@ -252,14 +364,18 @@ export default class MyWallet extends Component {
         return (
           <Content>
             <H3 style={{ color: "#000", alignSelf: "center", marginTop: 10 }}>申请版权存证</H3>
-            <Input bordered placeholder="声明人：" style={{ marginTop: 20 }}/>
-            <Input bordered placeholder="版权名称：" style={{ marginTop: 20 }}/>
-            <Input bordered placeholder="声明时间：" style={{ marginTop: 20 }}/>
-            <Input bordered placeholder="简介：" style={{ marginTop: 20 }}/>
+            <Input bordered placeholder="声明人：" style={{ marginTop: 20 }}
+                   value={this.state.patenter} onChangeText={val => this.setState({ patenter: val })}/>
+            <Input bordered placeholder="版权名称：" style={{ marginTop: 20 }}
+                   value={this.state.patentName} onChangeText={val => this.setState({ patentName: val })}/>
+            <Input bordered placeholder="声明时间：" style={{ marginTop: 20 }}
+                   value={this.state.patentTime} onChangeText={val => this.setState({ patentTime: val })}/>
+            <Input bordered placeholder="简介：" style={{ marginTop: 20 }}
+                   value={this.state.patentDesc} onChangeText={val => this.setState({ patentDesc: val })}/>
             <Button full dark style={{ marginTop: 20 }}>
-              <Text>点击上传</Text>
+              <Text>选择存证</Text>
             </Button>
-            <Button full dark style={{ marginTop: 20 }} onPress={_ => this.setState({ newHasSuccess: true })}>
+            <Button full dark style={{ marginTop: 20 }} onPress={_ => this.postApiPatent()}>
               <Text>写入区块链</Text>
             </Button>
           </Content>
@@ -304,9 +420,9 @@ export default class MyWallet extends Component {
       <Container style={styles.container}>
         <Header>
           <Left>
-            <Button transparent onPress={() => this.props.navigation.goBack()}>
-              <Icon name="arrow-back"/>
-            </Button>
+            {/*<Button transparent onPress={() => this.props.navigation.goBack()}>*/}
+            {/*<Icon name="arrow-back"/>*/}
+            {/*</Button>*/}
           </Left>
           <Body>
           <Title>我的钱包</Title>
@@ -325,7 +441,11 @@ export default class MyWallet extends Component {
               <Icon active={this.state.active == 0} name="apps"/>
               <Text>新的申请</Text>
             </Button>
-            <Button vertical onPress={_ => this.setState({ active: 1 })}>
+            <Button vertical onPress={_ => {
+              this.setState({ active: 1 });
+              this.reqApiListData();
+            }
+            }>
               <Icon active={this.state.active == 1} name="camera"/>
               <Text>存证列表</Text>
             </Button>
