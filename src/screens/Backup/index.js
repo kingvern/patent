@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { ImageBackground, View } from "react-native";
 import {
   Container,
   Header,
@@ -24,6 +24,8 @@ var CryptoJS = require("crypto-js");
 var walletUtil = require("../../util/wallet");
 var storageUtil = require("../../util/storage");
 
+const launchscreenBg = require("../../../assets/Backk.png");
+
 Array.prototype.remove = function(val) {
   var index = this.indexOf(val);
   if (index > -1) {
@@ -34,7 +36,7 @@ Array.prototype.remove = function(val) {
 export default class Backup extends Component {
   // 从preBackup接受参数：wallet，pin
   // 让用户验证助记词
-  // 加密钱包信息到walletData
+  // 加密以太坊账户信息到walletData
   // 到MyWallet传出参数：walletData，pin
   constructor(props) {
     super(props);
@@ -124,8 +126,8 @@ export default class Backup extends Component {
         type: "login"
       };
       store.dispatch(action2);
-      console.log("this.state backup",store.getState())
-      this.props.navigation.navigate("MyWallet", { walletData: this.state.walletData, active: 2, hasAccount: false});
+      console.log("this.state backup", store.getState());
+      this.props.navigation.navigate("MyWallet", { walletData: this.state.walletData, active: 2, hasAccount: false });
     }
     else {
       alert("输入错误哦！");
@@ -145,35 +147,42 @@ export default class Backup extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Header>
-          <Left>
-            <Button transparent onPress={() => this.props.navigation.goBack()}>
-              <Icon name="arrow-back"/>
-            </Button>
-          </Left>
-          <Body>
-          <Title>点击输入助记词</Title>
-          </Body>
-          <Right>
-          </Right>
-        </Header>
 
-        <Content padder>
+        <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
+          <Header>
+            <Left>
+              <Button transparent onPress={() => this.props.navigation.goBack()}>
+                <Icon name="arrow-back"/>
+              </Button>
+            </Left>
+            <Body>
+            <Title>点击输入助记词</Title>
+            </Body>
+            <Right>
+            </Right>
+          </Header>
+
+          <Content padder>
             <Textarea rowSpan={5} bordered placeholder="输入助记词，按空格分隔；或者直接点击助记词按钮输入"
                       value={this.state.textarea}
                       onChangeText={(textarea) => this.setState({ textarea })}/>
-          <Content padder>
-            <View
-              style={{ flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap" }}
-            >
-              {this.state.stateWord.map((item, i) => this.renderItem(item, i))}
-            </View>
-          </Content>
-          <Button full dark style={{ marginTop: 20 }} onPress={() => this._checkMnemonic()}>
-            <Text>确定</Text>
-          </Button>
+            <Content padder>
+              <View
+                style={{ flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap" }}
+              >
+                {this.state.stateWord.map((item, i) => this.renderItem(item, i))}
+              </View>
+            </Content>
+            <Button
 
-        </Content>
+              full
+              style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }}
+              onPress={() => this._checkMnemonic()}>
+              <Text style={{ color: "#fff", fontSize: 20 }}>确定</Text>
+            </Button>
+
+          </Content>
+        </ImageBackground>
       </Container>
     );
   }

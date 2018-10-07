@@ -14,5 +14,11 @@ export default {
   },
   button: {
     margin: 2
-  }
+  },
+  imageContainer: {
+    flex: 1,
+    width: null,
+    height: null
+  },
+
 };

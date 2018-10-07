@@ -14,11 +14,14 @@ import {
   Textarea
 } from "native-base";
 import styles from "./styles";
+import { ImageBackground } from "react-native";
 
 var ethers = require("ethers");
 
+const launchscreenBg = require("../../../assets/Backk.png");
+
 export default class ImportWallet extends Component {
-  //传导入的钱包到PinPage设置Pin码
+  //传导入的以太坊账户到PinPage设置账户密码
   constructor(props) {
     super(props);
     this.state = {
@@ -29,6 +32,7 @@ export default class ImportWallet extends Component {
   render() {
     return (
       <Container style={styles.container}>
+        <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
         <Header>
           <Left>
             <Button transparent onPress={() => this.props.navigation.goBack()}>
@@ -36,7 +40,7 @@ export default class ImportWallet extends Component {
             </Button>
           </Left>
           <Body>
-          <Title>导入钱包</Title>
+          <Title>导入以太坊账户</Title>
           </Body>
           <Right>
           </Right>
@@ -47,7 +51,8 @@ export default class ImportWallet extends Component {
           <Textarea rowSpan={5} bordered placeholder="输入助记词，按空格分隔"
                     onChangeText={(mnemonic) => this.setState({ mnemonic })}
                     value={this.state.mnemonic}/>
-          <Button full dark style={{ marginTop: 20 }}
+          <Button full
+                  style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }}
                   onPress={() => {
                     var mnemonic = this.state.mnemonic;
                     var wallet = ethers.Wallet.fromMnemonic(mnemonic);
@@ -57,6 +62,7 @@ export default class ImportWallet extends Component {
             <Text>确定</Text>
           </Button>
         </Content>
+        </ImageBackground>
       </Container>
     );
   }

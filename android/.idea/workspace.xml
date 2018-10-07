@@ -41,7 +41,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gradle.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -64,18 +64,18 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../node_modules/react-native-file-selector/android/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
+            <state relative-caret-position="255">
               <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../node_modules/react-native-fs/android/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -84,8 +84,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="75">
+              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -5152,14 +5152,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build.gradle" />
         <option value="$PROJECT_DIR$/../node_modules/react-native-fs/android/build.gradle" />
+        <option value="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build.gradle" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="333" />
-    <option name="y" value="23" />
+    <option name="x" value="1067" />
+    <option name="y" value="154" />
     <option name="width" value="1273" />
     <option name="height" value="989" />
   </component>
@@ -5233,6 +5233,25 @@
             <path>
               <item name="NativebaseKitchenSink" type="b2602c69:ProjectViewProjectNode" />
               <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NativebaseKitchenSink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NativebaseKitchenSink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NativebaseKitchenSink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="NativebaseKitchenSink" type="b2602c69:ProjectViewProjectNode" />
@@ -5272,12 +5291,12 @@
     <property name="android.profiler.active" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -5460,7 +5479,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="333" y="23" width="1273" height="989" extended-state="0" />
+    <frame x="1067" y="154" width="1273" height="989" extended-state="0" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -5811,18 +5830,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
+    <entry file="file://$PROJECT_DIR$/../node_modules/react-native-file-selector/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../node_modules/react-native-fs/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -5835,18 +5862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../node_modules/react-native-file-selector/android/build.gradle">
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../node_modules/react-native-fs/android/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>

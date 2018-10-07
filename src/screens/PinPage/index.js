@@ -1,4 +1,3 @@
-
 var ethers = require("ethers");
 
 import React, { Component } from "react";
@@ -16,12 +15,15 @@ import {
 } from "native-base";
 import styles from "./styles";
 
+import { ImageBackground, View } from "react-native";
 import { AsyncStorage } from "react-native";
 
 var CryptoJS = require("crypto-js");
 var walletUtil = require("../../util/wallet");
 var storageUtil = require("../../util/storage");
 import store from "../../store";
+
+const launchscreenBg = require("../../../assets/Backk.png");
 
 export default class PinPage extends Component {
   // 从ImportWallet传进参数：wallet
@@ -31,7 +33,7 @@ export default class PinPage extends Component {
     this.state = {
       wallet: this.props.navigation.state.params.wallet,
       pin: "",
-      loading: ''
+      loading: ""
 
     };
   }
@@ -75,7 +77,8 @@ export default class PinPage extends Component {
       // );
     }
   }
-  refreshBalance(wallet){
+
+  refreshBalance(wallet) {
 
     wallet.provider = ethers.providers.getDefaultProvider("ropsten");
     var balancePromise = wallet.getBalance();
@@ -84,15 +87,15 @@ export default class PinPage extends Component {
       var balance = parseInt(balanceRaw) / 1e18;
       this.setState({ balance: balance });
       var walletData = this.state.walletData;
-       walletData = {
+      walletData = {
         ...walletData,
         balance: this.state.balance
       };
       this.setState({ walletData: walletData, hasAccount: true });
       var action = {
-        type:"set_walletData",
-        walletData:walletData
-      }
+        type: "set_walletData",
+        walletData: walletData
+      };
       store.dispatch(action);
     });
   }
@@ -100,33 +103,36 @@ export default class PinPage extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Header>
-          <Left>
-            <Button transparent onPress={() => this.props.navigation.goBack()}>
-              <Icon name="arrow-back"/>
+        <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
+          <Header>
+            <Left>
+              <Button transparent onPress={() => this.props.navigation.goBack()}>
+                <Icon name="arrow-back"/>
+              </Button>
+            </Left>
+            <Body>
+            <Title>进入以太坊账户</Title>
+            </Body>
+            <Right>
+            </Right>
+          </Header>
+
+          <Content padder>
+
+            <H3 style={{ color: "#000", alignSelf: "center" }}>输入账户密码</H3>
+            <Text style={{ color: "#000", alignSelf: "center" }}>账户密码用于交易签名。我们不存储账户密码，无法提供找回功能，请牢记</Text>
+            <Item>
+              <Input bordered placeholder="输入账户密码" value={this.state.pin}
+                     onChangeText={(pin) => this.setState({ pin: pin })}/>
+            </Item>
+            <Button full
+                    style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={() => this._sendData()}>
+              <Text style={{ color: "#fff", fontSize: 20 }}>下一步</Text>
             </Button>
-          </Left>
-          <Body>
-          <Title>进入钱包</Title>
-          </Body>
-          <Right>
-          </Right>
-        </Header>
 
-        <Content padder>
-
-          <H3 style={{ color: "#000", alignSelf: "center" }}>输入PIN码</H3>
-          <Text style={{ color: "#000", alignSelf: "center" }}>PIN码用于交易签名。我们不存储PIN码，无法提供找回功能，请牢记</Text>
-          <Item>
-            <Input bordered placeholder="输入PIN码" value={this.state.pin}
-                   onChangeText={(pin) => this.setState({ pin: pin })}/>
-          </Item>
-          <Button full dark style={{ marginTop: 20 }} onPress={() => this._sendData()}>
-            <Text>下一步</Text>
-          </Button>
-
-          <H3 style={{ color: "#000", alignSelf: "center", marginTop: 20 }}>{this.state.loading}</H3>
-        </Content>
+            <H3 style={{ color: "#000", alignSelf: "center", marginTop: 20 }}>{this.state.loading}</H3>
+          </Content>
+        </ImageBackground>
       </Container>
     );
   }

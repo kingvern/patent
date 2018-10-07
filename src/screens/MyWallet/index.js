@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Linking, Modal, View } from "react-native";
+import { ImageBackground, Linking, Modal, View } from "react-native";
 import { AsyncStorage } from "react-native";
 import {
   Container,
@@ -30,6 +30,7 @@ var ethers = require("ethers");
 var walletUtil = require("../../util/wallet");
 var storageUtil = require("../../util/storage");
 
+const launchscreenBg = require("../../../assets/Backk.png");
 let contractAddress = "0x4D3F0D9a79ee462c29608De5A7f2692613502d70";
 
 export default class MyWallet extends Component {
@@ -99,8 +100,8 @@ export default class MyWallet extends Component {
       });
 
     axios.post("https://faucet.metamask.io/", this.state.address)
-      .then(hash => console.log("hash", hash))
-      .catch(e => console.log(e));
+      .then(hash => alert("为方便测试，已通过测试网络获取以太币，交易hash：" + hash))
+      .catch(e => alert("为方便测试，以尝试通过测试网络获取以太币，但是失败，原因：" + e));
 
   }
 
@@ -218,7 +219,7 @@ export default class MyWallet extends Component {
       this.postApiPatent();
     }).catch(err => {
       console.log(err);
-      alert("写入区块链出错了:"+ err);
+      alert("写入区块链出错了:" + err);
     });
   }
 
@@ -253,8 +254,8 @@ export default class MyWallet extends Component {
       }
       // const result = res.data.data;
     }).catch(err => {
-      console.log(err)
-      alert("上传服务器出错了:"+ err);
+      console.log(err);
+      alert("上传服务器出错了:" + err);
     });
   }
 
@@ -325,7 +326,7 @@ export default class MyWallet extends Component {
             <Text bordered style={{ marginTop: 20 }}>用户名：{this.state.username}</Text>
             <Text bordered style={{ marginTop: 20 }}>手机：{this.state.phone}</Text>
             <Text bordered style={{ marginTop: 20 }}>身份证号：{this.state.idNum}</Text>
-            <Button full danger style={{ marginTop: 22 }} onPress={() => {
+            <Button full danger style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={() => {
               AsyncStorage.clear().then(() => this.props.navigation.navigate("MainPage"));
               clearInterval(this.timerID);
             }}><Text>退出登录</Text></Button>
@@ -335,25 +336,22 @@ export default class MyWallet extends Component {
       } else {
         return (
           <Content>
-            <H3 style={{ color: "#000", alignSelf: "center", marginTop: 10 }}>登录成功</H3>
-            <Text style={{ padding: 10, fontSize: 15, alignSelf: "center", marginTop: 10 }}>
-              请修改个人信息
-            </Text>
-            <Input bordered placeholder="姓名：" style={{ marginTop: 20 }}
+            <H3 style={{ color: "#000", alignSelf: "center", marginTop: 10 }}>登录成功，请修改个人信息</H3>
+            <Input bordered placeholder="姓名：" style={{ marginTop: 10 }}
                    value={this.state.name} onChangeText={val => this.setState({ name: val })}/>
-            <Input bordered placeholder="用户名：" style={{ marginTop: 20 }}
+            <Input bordered placeholder="用户名：" style={{ marginTop: 10 }}
                    value={this.state.username} onChangeText={val => this.setState({ username: val })}/>
-            <Input bordered placeholder="邮箱：" style={{ marginTop: 20 }}
+            <Input bordered placeholder="邮箱：" style={{ marginTop: 10 }}
                    value={this.state.email} onChangeText={val => this.setState({ email: val })}/>
-            <Input bordered placeholder="手机：" style={{ marginTop: 20 }}
+            <Input bordered placeholder="手机：" style={{ marginTop: 10 }}
                    value={this.state.phone} onChangeText={val => this.setState({ phone: val })}/>
-            <Input bordered placeholder="身份证号:" style={{ marginTop: 20 }}
+            <Input bordered placeholder="身份证号:" style={{ marginTop: 10 }}
                    value={this.state.idNum} onChangeText={val => this.setState({ idNum: val })}/>
-            <Button full dark onPress={_ => this.postApiAccount()}>
+            <Button full  style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={_ => this.postApiAccount()}>
               <Text>确定修改</Text>
             </Button>
 
-            <Button full danger style={{ marginTop: 22 }} onPress={() => {
+            <Button full danger style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }}  onPress={() => {
               AsyncStorage.clear().then(() => this.props.navigation.navigate("MainPage"));
               clearInterval(this.timerID);
             }}><Text>退出登录</Text></Button>
@@ -388,7 +386,7 @@ export default class MyWallet extends Component {
             <Text bordered style={{ marginTop: 20 }} onPress={() => {
               this.open(this.state.transaction);
             }}>交易hash：{this.state.transaction}</Text>
-            <Button full dark style={{ marginTop: 22 }} onPress={_ => {
+            <Button full  style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={_ => {
               this.setState({ newHasSuccess: false });
               this.clearForm();
             }}>
@@ -420,7 +418,7 @@ export default class MyWallet extends Component {
             />
             <Input bordered placeholder="简介：" style={{ marginTop: 20 }}
                    value={this.state.patentDesc} onChangeText={val => this.setState({ patentDesc: val })}/>
-            <Button full dark style={{ marginTop: 20 }} onPress={_ => {
+            <Button full  style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={_ => {
               RNFileSelector.Show(
                 {
                   title: "Select File",
@@ -454,7 +452,7 @@ export default class MyWallet extends Component {
             }}>
               <Text>选择存证</Text>
             </Button>
-            <Button full dark style={{ marginTop: 20 }} onPress={_ => {
+            <Button full  style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={_ => {
               this.setModalVisible(true);
               this.setState({
                 gotoTx: true,
@@ -470,29 +468,29 @@ export default class MyWallet extends Component {
     } else {
       return (
         <Content padder>
-          <H3 style={{ color: "#000", alignSelf: "center" }}>转账</H3>
-          <Item>
-            <Input bordered placeholder="请输入对方地址" value={this.state.to} onChangeText={(to) => this.setState({ to })}/>
-            <Input bordered placeholder="请输入转账金额ETH" value={this.state.value.toString()}
-                   onChangeText={(value) => this.setState({ value })}/>
-          </Item>
-          <Button full dark style={{ marginTop: 20 }} onPress={() => {
-            this.setState({ ModalVisible: true, pin: "", task: "tx" });
-          }}>
-            <Text>转账</Text>
-          </Button>
-          <Text style={{ padding: 10, fontSize: 11 }}>
-            我的钱包地址:{this.state.address}
-          </Text>
-          <Text style={{ padding: 10, fontSize: 22, alignSelf: "center" }}>
-            {this.state.balance.toFixed(18)}
-          </Text>
-          <Text style={{ padding: 10, fontSize: 11 }}>
-            当前交易哈希: {this.state.txHash}
-          </Text>
-          <Button full dark style={{ marginTop: 20 }} onPress={() => {
-            this.setState({ ModalVisible: true, pin: "", task: "backup" });
-          }}><Text>备份钱包</Text></Button>
+          {/*<H3 style={{ color: "#000", alignSelf: "center" }}>转账</H3>*/}
+          {/*<Item>*/}
+            {/*<Input bordered placeholder="请输入对方地址" value={this.state.to} onChangeText={(to) => this.setState({ to })}/>*/}
+            {/*<Input bordered placeholder="请输入转账金额ETH" value={this.state.value.toString()}*/}
+                   {/*onChangeText={(value) => this.setState({ value })}/>*/}
+          {/*</Item>*/}
+          {/*<Button full dark style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={() => {*/}
+            {/*this.setState({ ModalVisible: true, pin: "", task: "tx" });*/}
+          {/*}}>*/}
+            {/*<Text>转账</Text>*/}
+          {/*</Button>*/}
+          {/*<Text style={{ padding: 10, fontSize: 11 }}>*/}
+            {/*我的以太坊账户地址:{this.state.address}*/}
+          {/*</Text>*/}
+          {/*<Text style={{ padding: 10, fontSize: 22, alignSelf: "center" }}>*/}
+            {/*{this.state.balance.toFixed(18)}*/}
+          {/*</Text>*/}
+          {/*<Text style={{ padding: 10, fontSize: 11 }}>*/}
+            {/*当前交易哈希: {this.state.txHash}*/}
+          {/*</Text>*/}
+          {/*<Button full dark style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={() => {*/}
+            {/*this.setState({ ModalVisible: true, pin: "", task: "backup" });*/}
+          {/*}}><Text>备份以太坊账户</Text></Button>*/}
         </Content>
       );
     }
@@ -503,90 +501,93 @@ export default class MyWallet extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Header>
-          <Left>
-            {/*<Button transparent onPress={() => this.props.navigation.goBack()}>*/}
-            {/*<Icon name="arrow-back"/>*/}
-            {/*</Button>*/}
-          </Left>
-          <Body>
-          <Title>我的钱包</Title>
-          </Body>
-          <Right>
-          </Right>
-        </Header>
+
+        <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
+          <Header>
+            <Left>
+              {/*<Button transparent onPress={() => this.props.navigation.goBack()}>*/}
+              {/*<Icon name="arrow-back"/>*/}
+              {/*</Button>*/}
+            </Left>
+            <Body>
+            <Title>ETH版权存证</Title>
+            </Body>
+            <Right>
+            </Right>
+          </Header>
 
 
-        {this.renderScreen()}
+          {this.renderScreen()}
 
 
-        <Footer>
-          <FooterTab>
-            <Button vertical onPress={_ => this.setState({ active: 0 })}>
-              <Icon active={this.state.active == 0} name="apps"/>
-              <Text>新的申请</Text>
-            </Button>
-            <Button vertical onPress={_ => {
-              this.setState({ active: 1 });
-              this.reqApiListData();
-            }
-            }>
-              <Icon active={this.state.active == 1} name="camera"/>
-              <Text>存证列表</Text>
-            </Button>
-            <Button vertical onPress={_ => this.setState({ active: 2 })}>
-              <Icon active={this.state.active == 2} name="person"/>
-              <Text>个人信息</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
-
-        <View>
-          <Modal
-            animationType="slide"
-            transparent={false}
-            visible={this.state.ModalVisible}
-            onRequestClose={() => {
-              alert("Modal has been closed.");
-            }}>
-            <View style={{ marginTop: 22 }}>
-
-              <H3 style={{ color: "#000", alignSelf: "center" }}>{this.state.gotoTx ? "请验证PIN码来写入区块链" : "欢迎回来，请登录"}</H3>
-              <Text style={{ color: "#000", alignSelf: "center" }}></Text>
-              <Item>
-                <Input bordered placeholder="输入PIN码" value={this.state.pin}
-                       onChangeText={pin => this.setState({ pin: pin })}/>
-              </Item>
-              <Button full dark style={{ marginTop: 20 }} onPress={() => {
-                var wallet = walletUtil.checkPin(this.state.walletData, this.state.pin);
-                console.log(wallet);
-                if (wallet) {
-                  var toastText = "验证成功";
-                  if (this.state.gotoTx) {
-                    alert("正在向区块链写入,请等待");
-                    this.sendTx(wallet);
-                  }
-                } else {
-                  var toastText = "验证失败";
-
-                }
-                this.setModalVisible(false);
-                Toast.show({
-                  text: toastText,
-                  buttonText: "Okay"
-                });
-
-                console.log("下一步", this.state.ModalVisible);
-                // alert("PIN码错误！")
-              }}>
-                <Text>{this.state.gotoTx ? "验证" : "登录"}</Text>
+          <Footer>
+            <FooterTab>
+              <Button vertical onPress={_ => this.setState({ active: 0 })}>
+                <Icon active={this.state.active == 0} name="apps"/>
+                <Text>新的申请</Text>
               </Button>
-              {this.renderClose()}
+              <Button vertical onPress={_ => {
+                this.setState({ active: 1 });
+                this.reqApiListData();
+              }
+              }>
+                <Icon active={this.state.active == 1} name="camera"/>
+                <Text>存证列表</Text>
+              </Button>
+              <Button vertical onPress={_ => this.setState({ active: 2 })}>
+                <Icon active={this.state.active == 2} name="person"/>
+                <Text>个人信息</Text>
+              </Button>
+            </FooterTab>
+          </Footer>
 
-            </View>
-          </Modal>
-        </View>
+          <View>
+            <Modal
+              animationType="slide"
+              transparent={false}
+              visible={this.state.ModalVisible}
+              onRequestClose={() => {
+                alert("Modal has been closed.");
+              }}>
+              <View style={{ marginTop: 22 }}>
 
+                <H3
+                  style={{ color: "#000", alignSelf: "center" }}>{this.state.gotoTx ? "请验证账户密码来写入区块链" : "欢迎回来，请登录"}</H3>
+                <Text style={{ color: "#000", alignSelf: "center" }}></Text>
+                <Item>
+                  <Input bordered placeholder="输入账户密码" value={this.state.pin}
+                         onChangeText={pin => this.setState({ pin: pin })}/>
+                </Item>
+                <Button full  style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={() => {
+                  var wallet = walletUtil.checkPin(this.state.walletData, this.state.pin);
+                  console.log(wallet);
+                  if (wallet) {
+                    var toastText = "验证成功";
+                    if (this.state.gotoTx) {
+                      alert("正在向区块链写入,请等待");
+                      this.sendTx(wallet);
+                    }
+                  } else {
+                    var toastText = "验证失败";
+
+                  }
+                  this.setModalVisible(false);
+                  Toast.show({
+                    text: toastText,
+                    buttonText: "Okay"
+                  });
+
+                  console.log("下一步", this.state.ModalVisible);
+                  // alert("账户密码错误！")
+                }}>
+                  <Text>{this.state.gotoTx ? "验证" : "登录"}</Text>
+                </Button>
+                {this.renderClose()}
+
+              </View>
+            </Modal>
+          </View>
+        </ImageBackground>
 
       </Container>
     );
@@ -595,7 +596,7 @@ export default class MyWallet extends Component {
   renderClose() {
     if (this.state.gotoTx) {
       return (
-        <Button full dark style={{ marginTop: 20 }} onPress={() => this.setModalVisible(false)}>
+        <Button full  style={{ borderRadius: 30, marginLeft: 20, marginRight:20,marginTop:20, height: 60 }} onPress={() => this.setModalVisible(false)}>
           <Text>关闭</Text>
         </Button>
       );

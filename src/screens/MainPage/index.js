@@ -8,7 +8,7 @@ import styles from "./styles";
 import { AsyncStorage } from "react-native";
 import util from "../../util/util.js";
 
-const launchscreenBg = require("../../../assets/MainPage.png");
+const launchscreenBg = require("../../../assets/MainPageBack.png");
 const launchscreenLogo = require("../../../assets/logo-kitchen-sink.png");
 
 export default class MainPage extends Component {
@@ -62,25 +62,26 @@ export default class MainPage extends Component {
               backgroundColor: "transparent"
             }}
           >
-            <H3 style={styles.text}>在请先创建一个账户</H3>
+            <H3 style={styles.text}>创建一个以太坊账户</H3>
             <View style={{ marginTop: 8 }}/>
-            <Text style={styles.text}>可以通过新建或导入以太坊钱包创建账户</Text>
-            <View style={{ marginTop: 8 }}/>
+            <Text style={styles.text}>或者导入以太坊账户</Text>
           </View>
-          <View style={{ marginBottom: 80 }}>
+          <View style={{ marginBottom: 0 }}>
             <Button
-              style={{ backgroundColor: "#000", alignSelf: "center" }}
+              full
+              style={{ borderRadius: 30, margin: 30 ,height:60 }}
               onPress={() => this.props.navigation.navigate("NewWallet")}
             >
-                <Text>新建账户</Text>
+                <Text style={{ color: "#fff", fontSize: 20 }} >新建账户</Text>
             </Button>
           </View>
-          <View style={{ marginBottom: 80 }}>
+          <View style={{ marginBottom: 0 }}>
             <Button
-              style={{ backgroundColor: "#fff", alignSelf: "center" }}
+              full
+              style={{ borderRadius: 30, margin: 30 ,height:60 }}
               onPress={() => this.props.navigation.navigate("ImportWallet")}
             >
-              <Text style={{ color: "#000" }}>导入账户</Text>
+              <Text style={{ color: "#fff", fontSize: 20 }}>导入账户</Text>
             </Button>
           </View>
         </ImageBackground>

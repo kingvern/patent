@@ -100,16 +100,16 @@
         "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/library-1.8.aar/0e80c94f2c147b3005a236ba6ba077ff/res/drawable-hdpi-v4/ic_file_gray_116dp.png"
     },
     {
-        "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/layout_design_navigation_menu_item.xml.flat",
-        "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/design-25.0.0.aar/650c3862e8fb50db853b63f8572acc6b/res/layout/design_navigation_menu_item.xml"
+        "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/drawable_design_ic_visibility.xml.flat",
+        "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/design-25.0.0.aar/650c3862e8fb50db853b63f8572acc6b/res/drawable/design_ic_visibility.xml"
     },
     {
         "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/layout_select_dialog_item_material.xml.flat",
         "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/b540bdf71534c2c2ff8d413094c2ac30/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/drawable_design_ic_visibility.xml.flat",
-        "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/design-25.0.0.aar/650c3862e8fb50db853b63f8572acc6b/res/drawable/design_ic_visibility.xml"
+        "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/layout_design_navigation_menu_item.xml.flat",
+        "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/design-25.0.0.aar/650c3862e8fb50db853b63f8572acc6b/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/color-v23_abc_tint_switch_track.xml.flat",
@@ -128,12 +128,12 @@
         "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/library-1.8.aar/0e80c94f2c147b3005a236ba6ba077ff/res/drawable-mdpi-v4/ic_pdf_box.png"
     },
     {
-        "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/menu_menu.xml.flat",
-        "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/library-1.8.aar/0e80c94f2c147b3005a236ba6ba077ff/res/menu/menu.xml"
-    },
-    {
         "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/b540bdf71534c2c2ff8d413094c2ac30/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/menu_menu.xml.flat",
+        "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/library-1.8.aar/0e80c94f2c147b3005a236ba6ba077ff/res/menu/menu.xml"
     },
     {
         "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/drawable-xxxhdpi-v4_ic_zip_box.png.flat",
@@ -1264,6 +1264,10 @@
         "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/b540bdf71534c2c2ff8d413094c2ac30/res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/drawable-mdpi_assets_mainpageback.png.flat",
+        "source": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/src/main/res/drawable-mdpi/assets_mainpageback.png"
+    },
+    {
         "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_ic_word_box.png.flat",
         "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/library-1.8.aar/0e80c94f2c147b3005a236ba6ba077ff/res/drawable-xhdpi-v4/ic_word_box.png"
     },
@@ -1378,6 +1382,10 @@
     {
         "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/color_design_error.xml.flat",
         "source": "/Users/litex/.gradle/caches/transforms-1/files-1.1/design-25.0.0.aar/650c3862e8fb50db853b63f8572acc6b/res/color/design_error.xml"
+    },
+    {
+        "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/drawable-mdpi_assets_backk.png.flat",
+        "source": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/src/main/res/drawable-mdpi/assets_backk.png"
     },
     {
         "merged": "/Users/litex/Desktop/patent/dice2win_rn.git/android/app/build/intermediates/res/merged/release/layout-v16_notification_template_custom_big.xml.flat",
