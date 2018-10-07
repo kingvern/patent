@@ -8,7 +8,7 @@ import styles from "./styles";
 import { AsyncStorage } from "react-native";
 import util from "../../util/util.js";
 
-const launchscreenBg = require("../../../assets/launchscreen-bg.png");
+const launchscreenBg = require("../../../assets/MainPage.png");
 const launchscreenLogo = require("../../../assets/logo-kitchen-sink.png");
 
 export default class MainPage extends Component {
@@ -72,7 +72,7 @@ export default class MainPage extends Component {
               style={{ backgroundColor: "#000", alignSelf: "center" }}
               onPress={() => this.props.navigation.navigate("NewWallet")}
             >
-              <Text>新建账户</Text>
+                <Text>新建账户</Text>
             </Button>
           </View>
           <View style={{ marginBottom: 80 }}>

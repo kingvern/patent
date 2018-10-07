@@ -218,10 +218,7 @@ export default class MyWallet extends Component {
       this.postApiPatent();
     }).catch(err => {
       console.log(err);
-      Toast.show({
-        text: "写入区块链失败",
-        buttonText: "Okay"
-      });
+      alert("写入区块链出错了:"+ err);
     });
   }
 
@@ -256,11 +253,8 @@ export default class MyWallet extends Component {
       }
       // const result = res.data.data;
     }).catch(err => {
-      console.log(err);
-      Toast.show({
-        text: "上传服务器失败",
-        buttonText: "Okay"
-      });
+      console.log(err)
+      alert("上传服务器出错了:"+ err);
     });
   }
 
@@ -569,6 +563,7 @@ export default class MyWallet extends Component {
                 if (wallet) {
                   var toastText = "验证成功";
                   if (this.state.gotoTx) {
+                    alert("正在向区块链写入,请等待");
                     this.sendTx(wallet);
                   }
                 } else {
