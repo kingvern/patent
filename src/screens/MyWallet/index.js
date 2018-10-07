@@ -11,7 +11,7 @@ import {
   Left,
   Right,
   Body,
-  Text, Input, Item, H3, Footer, Toast, FooterTab, ListItem, List
+  Text, Input, Item, H3, Footer, Toast, FooterTab, ListItem, List, DatePicker
 } from "native-base";
 import styles from "./styles";
 import store from "../../store";
@@ -73,7 +73,7 @@ export default class MyWallet extends Component {
 
       patenter: "",
       patentName: "",
-      patentTime: "",
+      patentTime: new Date(),
       patentDesc: "",
 
       hash: "",
@@ -207,12 +207,12 @@ export default class MyWallet extends Component {
     wallet.provider = ethers.providers.getDefaultProvider("ropsten");
 
     var contract = new ethers.Contract(contractAddress, abi, wallet);
-    console.log("param,", this.state.address, this.state.patenter, this.state.patentName, this.state.patentTime, this.state.patentDesc, this.state.hash);
+    console.log("param,", this.state.address, this.state.patenter, this.state.patentName, this.state.patentTime.toString().substr(4, 12), this.state.patentDesc, this.state.hash);
     Toast.show({
       text: "正在写入区块链",
       buttonText: "Okay"
     });
-    contract.newBanquan(this.state.address, this.state.patenter, this.state.patentName, this.state.patentTime, this.state.patentDesc, this.state.hash).then((tx) => {
+    contract.newBanquan(this.state.address, this.state.patenter, this.state.patentName, this.state.patentTime.toString().substr(4, 12), this.state.patentDesc, this.state.hash).then((tx) => {
       console.log("tx:", tx);
       this.setState({ transaction: tx.hash });
       this.postApiPatent();
@@ -235,7 +235,7 @@ export default class MyWallet extends Component {
         "address": this.state.address,
         "user": this.state.patenter,
         "docname": this.state.patentName,
-        "time": this.state.patentTime,
+        "time": this.state.patentTime.toString().substr(4, 12),
         "info": this.state.patentDesc,
         "hash": this.state.hash,
         "transaction": this.state.transaction
@@ -413,10 +413,17 @@ export default class MyWallet extends Component {
             <H3 style={{ color: "#000", alignSelf: "center", marginTop: 10 }}>申请版权存证</H3>
             <Input bordered placeholder="声明人：" style={{ marginTop: 20 }}
                    value={this.state.patenter} onChangeText={val => this.setState({ patenter: val })}/>
-            <Input bordered placeholder="版权名称：" style={{ marginTop: 20 }}
+            <Input bordered placeholder="版权名称：" style={{ marginTop: 20, marginBottom: 20 }}
                    value={this.state.patentName} onChangeText={val => this.setState({ patentName: val })}/>
-            <Input bordered placeholder="声明时间：" style={{ marginTop: 20 }}
-                   value={this.state.patentTime} onChangeText={val => this.setState({ patentTime: val })}/>
+            <DatePicker
+              modalTransparent={false}
+              animationType={"fade"}
+              androidMode={"default"}
+              placeHolderText="声明时间："
+              textStyle={{ color: "green" }}
+              placeHolderTextStyle={{ color: "#d3d3d3" }}
+              onDateChange={val => this.setState({ patentTime: val })}
+            />
             <Input bordered placeholder="简介：" style={{ marginTop: 20 }}
                    value={this.state.patentDesc} onChangeText={val => this.setState({ patentDesc: val })}/>
             <Button full dark style={{ marginTop: 20 }} onPress={_ => {
